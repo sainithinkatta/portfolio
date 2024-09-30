@@ -1,24 +1,38 @@
 [
   {
       "title": "Movie Mania",
-      "imageSrc": "projects/movie_mania.png",
       "description": "Developed a dynamic movie web application utilizing AngularJS for the frontend.",
       "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
       "source": "https://github.com/sainithinkatta/Movie-Mania"
   },
   {
       "title": "TaskBuster",
-      "imageSrc": "projects/task_buster.png",
       "description": "Developed a dynamic Todo application using ReactJS for the frontend.",
       "skills": ["ReactJS", "Javascript", "HTML", "CSS"],
       "source": "https://github.com/sainithinkatta/TaskBuster"
   },
   {
       "title": "Online Voting System",
-      "imageSrc": "projects/online_voting_system.png",
-      "description": "Developed a full-stack online voting web application using Django for the backend.",
+      "description": "Developed a full-stack online voting web application using Django.",
       "skills": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
       "source": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django"
-  }
+  },
+    {
+        "title": "Employee Churn Prediction",
+        "description": "This project aims to analyze key factors influencing employee turnover and develop a predictive model to enhance retention strategies, fostering a healthier workplace and driving organizational growth..",
+        "skills": ["Python", "Data Analysis", "Data Visualization", "Machine Learning"],
+        "source": "https://github.com/sainithinkatta/Employee-Churn-Prediction-using-ML-Algorithms"
+    },
+    {
+        "title": "Health Monitoring System",
+        "description": "Application built with Flask that facilitates the management of patient health data through a user-friendly interface.",
+        "skills": ["Flask", "Python", "Javascript", "HTML", "CSS", "SQ Lite"],
+        "source": "https://github.com/sainithinkatta/Health-Monitoring-System-using-Flask"
+    },
+    {
+        "title": "Body Mass Index",
+        "description": "This application provides users with a simple and efficient way to calculate and understand their BMI.",
+        "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
+        "source": "https://github.com/sainithinkatta/BMI-Web-Application-using-AngularJS"
+    }
 ]
-  
