@@ -1,0 +1,81 @@
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1.75px;
+    margin: 30px;
+}
+
+.projectTitle {
+    text-align: center;
+    padding: 10px;
+    color: #060909;
+}
+
+.projectDescription {
+    padding-bottom: 10px;
+}
+
+.projectSkills {
+    font-style: italic;
+    color: #a7a8a1;
+}
+
+.container {
+    padding: 20px;
+    text-align: center; /* Center aligns the title */
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between cards */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    max-width: 1000px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.card {
+    background-color: #4a5856; /* Green background */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Set width for 3 equal cards minus gap */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    color: white; /* Change text color to contrast with the green */
+    word-wrap: break-word; /* Break long words onto the next line */
+    margin-bottom: 30px; /* Add some spacing between rows */
+    text-align: left; /* Align text to the left in cards */
+}
+
+h2 {
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 1.5em; /* Adjust title font size if necessary */
+    text-align: center; /* Center the title */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block; /* Make button block level to align below title */
+    margin-left: auto; /* Center button horizontally */
+    margin-right: auto; /* Center button horizontally */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+}
