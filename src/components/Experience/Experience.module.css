@@ -4,11 +4,12 @@
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
   border-radius: 15px;
-  padding: 73px;
+  padding: 50px;
   margin-top: 100px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 5%;
 }
 
 .title {
@@ -16,7 +17,9 @@
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-bottom: 2px;
 }
 
 .content {
@@ -28,6 +31,23 @@
 .aboutImage {
   width: 35%;
   padding-right: 50px;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .aboutItems {
@@ -51,6 +71,10 @@
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
+}
+
+.aboutItemTitle {
+  padding-bottom: 10px;
 }
 
 .aboutItem:hover {

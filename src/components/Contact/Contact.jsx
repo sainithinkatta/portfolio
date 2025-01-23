@@ -5,26 +5,48 @@ export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+        <h3 className={styles.sitename}>Contact</h3>
+        <p className={styles.tagline}>Code. Create. Collaborate.</p>
       </div>
-      <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:sainithinreddyk16@gmail.com">sainithinreddyk16@gmail.com</a>
-        </li>
-        <li className={styles.link}>
+      <div className={styles.socialLinks}>
+      <a
+          href="mailto:sainithinreddyk16@gmail.com"
+          className={styles.socialIcon}
+        >
+          <img
+            src={getImageUrl("contact/emailIcon.png")}
+            alt="Email"
+            className={styles.icon}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/in/sai-nithin-katta-1401001b7/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialIcon}
+        >
           <img
             src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
+            alt="LinkedIn"
+            className={styles.icon}
           />
-          <a href="https://linkedin.com/in/sai-nithin-katta-1401001b7/" target="_blank">linkedin.com/sainithinkatta</a>
-        </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/sainithinkatta" target="_blank">github.com/sainithinkatta</a>
-        </li>
-      </ul>
+        </a>
+        <a
+          href="https://github.com/sainithinkatta"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialIcon}
+        >
+          <img
+            src={getImageUrl("contact/githubIcon.png")}
+            alt="GitHub"
+            className={styles.icon}
+          />
+        </a>
+      </div>
+      <div className={styles.footerBottom}>
+        <span>Copyright - All Rights Reserved</span>
+      </div>
     </footer>
   );
 };

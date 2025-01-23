@@ -12,12 +12,13 @@ export const Experience = () => {
           alt="Icon"
           className={styles.aboutImage}
         />
+      
         <ul className={styles.aboutItems}>
           {
             experiences.map((experience, index) => (
               <li key={index} className={styles.aboutItem}>
                 <div className={styles.aboutItemText}>
-                  <h3>{experience.role} - {experience.organisation}</h3>
+                  <h3 className={styles.aboutItemTitle}>{experience.role} - {experience.organisation}</h3>
                   <ul>
                     {experience.experiences.map((exp, expIndex) => (
                       <li key={expIndex}>{exp}</li>

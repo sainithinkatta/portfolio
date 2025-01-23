@@ -1,81 +1,102 @@
+:root {
+    --card-bg: #2b2f33;
+    --card-hover-bg: #374045;
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --text-color: #eaeaea;
+    --accent-color: #a7a8a1;
+}
+
 .title {
     color: var(--color-text);
     font-size: 35px;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 1.75px;
-    margin: 30px;
-}
-
-.projectTitle {
+    padding-bottom: 30px;
     text-align: center;
-    padding: 10px;
-    color: #060909;
-}
-
-.projectDescription {
-    padding-bottom: 10px;
-}
-
-.projectSkills {
-    font-style: italic;
-    color: #a7a8a1;
 }
 
 .container {
-    padding: 20px;
-    text-align: center; /* Center aligns the title */
+    padding: 50px 20px;
+    background-color: rgba(12, 12, 12, 0.6);
+    text-align: center;
+    border-radius: 2%;
+    margin: 2%;
 }
 
 .cardsContainer {
     display: flex;
-    justify-content: space-between; /* Distributes space evenly between cards */
-    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
-    max-width: 1000px; /* Set a max width for the container */
-    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align cards */
+    gap: 20px; /* Add space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
-    background-color: #4a5856; /* Green background */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: calc(33.33% - 20px); /* Set width for 3 equal cards minus gap */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    color: white; /* Change text color to contrast with the green */
-    word-wrap: break-word; /* Break long words onto the next line */
-    margin-bottom: 30px; /* Add some spacing between rows */
-    text-align: left; /* Align text to the left in cards */
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Adjust for spacing */
+    max-width: 350px;
+    min-width: 280px; /* Ensure cards don’t shrink too small */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-color);
+    text-align: left;
 }
 
-h2 {
-    margin: 0; /* Remove default margin to prevent overflow */
-    font-size: 1.5em; /* Adjust title font size if necessary */
-    text-align: center; /* Center the title */
+.cardContent {
+    padding: 20px;
+}
+
+.cardFooter {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.07);
+    background-color: var(--card-hover-bg);
+}
+
+.projectTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.projectDescription {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.projectSkills {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--accent-color);
 }
 
 .button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
-    text-decoration: none;
-    display: block; /* Make button block level to align below title */
-    margin-left: auto; /* Center button horizontally */
-    margin-right: auto; /* Center button horizontally */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button:hover {
-    background-color: #0056b3;
-}
-
-a {
-    text-decoration: none; /* Remove underline from links */
+    background-color: var(--primary-hover-color);
+    transform: scale(1.05);
 }

@@ -6,7 +6,7 @@
       "source": "https://github.com/sainithinkatta/Movie-Mania"
   },
   {
-      "title": "TaskBuster",
+      "title": "Task Buster",
       "description": "Developed a dynamic Todo application using ReactJS for the frontend.",
       "skills": ["ReactJS", "Javascript", "HTML", "CSS"],
       "source": "https://github.com/sainithinkatta/TaskBuster"
@@ -19,7 +19,7 @@
   },
     {
         "title": "Employee Churn Prediction",
-        "description": "This project aims to analyze key factors influencing employee turnover and develop a predictive model to enhance retention strategies, fostering a healthier workplace and driving organizational growth..",
+        "description": "This project aims to analyze key factors influencing employee turnover and develop a predictive model to enhance retention strategies.",
         "skills": ["Python", "Data Analysis", "Data Visualization", "Machine Learning"],
         "source": "https://github.com/sainithinkatta/Employee-Churn-Prediction-using-ML-Algorithms"
     },
