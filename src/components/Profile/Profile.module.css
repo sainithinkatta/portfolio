@@ -12,7 +12,8 @@
 
 .imageWrapper {
   position: relative;
-  
+  width: 100%;
+  max-width: 500px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -24,10 +25,8 @@
 }
 
 .heroImg {
-  width: 70%;
-  /* height: auto; */
+  width: 100%;
   border-radius: 30px;
-  /* position: relative; */
   z-index: 2;
   animation: floating 3s ease-in-out infinite;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
@@ -60,7 +59,7 @@
 }
 
 .title {
-  font-size: 60px;
+  font-size: clamp(40px, 6vw, 60px);
   font-weight: 300;
   margin-bottom: 10px;
   font-family: var(--font-roboto);
@@ -85,12 +84,20 @@
   font-family: var(--font-roboto);
   margin-bottom: 52px;
   line-height: 1.6;
-  width: 615px;
+  max-width: 615px;
+  width: 100%;
   opacity: 0.9;
+}
+
+.social-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .btnWrapper {
   perspective: 1000px;
+  margin-bottom: 15px;
 }
 
 .contactBtn {
@@ -101,15 +108,14 @@
   );
   color: var(--color-text);
   border-radius: 100px;
-  font-size: clamp(20px, 2.5vw, 30px);
-  padding: 17px 32px;
+  font-size: clamp(16px, 2.5vw, 24px);
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transform-style: preserve-3d;
-  margin-right: 20px;
 }
 
 .contactBtn:hover {
@@ -127,32 +133,8 @@
   transform: translate(3px, -3px);
 }
 
-.topBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-  animation: pulse 10s ease-in-out infinite;
-}
-
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-  animation: pulse 10s ease-in-out infinite reverse;
+.topBlur, .bottomBlur {
+  display: none;
 }
 
 @keyframes floating {
@@ -191,26 +173,46 @@
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
-    margin-top: 40px;
-    text-align: center;
-    gap: 40px;
+    margin: 40px 5%;
+    gap: 30px;
   }
 
   .content {
     align-items: center;
-    margin-left: 0;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
   }
 
   .imageWrapper {
-    width: 80%;
+    width: 70%;
+    max-width: 350px;
   }
 
   .title {
+    font-size: clamp(30px, 8vw, 40px);
     text-align: center;
   }
 
   .description {
+    font-size: clamp(14px, 4vw, 16px);
     text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .social-btns {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contactBtn {
+    font-size: clamp(14px, 4vw, 18px);
+    padding: 10px 20px;
+  }
+
+  .arrow {
+    width: 16px;
+    height: 16px;
   }
 }
-
