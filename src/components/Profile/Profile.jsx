@@ -43,7 +43,7 @@ export const Profile = () => {
           {profileData.description}
         </p>
 
-        <div className="social-btns" style={{ display: 'flex', gap: '12px' }}>
+        <div className="social-btns" style={{ display: 'flex', gap: '18px' }}>
 
           {/* Resume  */}
           <div className={styles.btnWrapper}>
