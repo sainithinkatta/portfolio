@@ -1,6 +1,8 @@
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
+import ContactForm from "./ContactForm";
+
 export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
@@ -8,8 +10,11 @@ export const Contact = () => {
         <h3 className={styles.sitename}>Contact</h3>
         <p className={styles.tagline}>Code. Create. Collaborate.</p>
       </div>
+
+      <ContactForm />
+
       <div className={styles.socialLinks}>
-      <a
+        <a
           href="mailto:sainithinreddyk16@gmail.com"
           className={styles.socialIcon}
         >

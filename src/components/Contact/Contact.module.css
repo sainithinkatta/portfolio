@@ -10,8 +10,9 @@
   justify-content: center;
   gap: 40px;
   position: relative;
-  width: 100%;
   margin-top: 60px;
+  border-radius: 2%;
+  margin: 2%;
 }
 
 .text {
@@ -102,4 +103,63 @@
   .footerBottom {
     font-size: 12px;
   }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.inputField,
+.textareaField {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
+}
+
+.inputField::placeholder,
+.textareaField::placeholder {
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+.textareaField {
+  height: 120px;
+  resize: none;
+}
+
+.submitButton {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-background);
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: auto;
+  margin: 0 auto;
+}
+
+.submitButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, var(--color-accent-hover) 0%, var(--color-accent) 100%);
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
