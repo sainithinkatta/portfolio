@@ -93,3 +93,62 @@
       transform: translate(0, -0px);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .skillsSection {
+      padding: 30px 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 50px;
+    }
+  
+    .title {
+      font-size: 28px;
+      padding-bottom: 20px;
+    }
+  
+    .skillsContainer {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+    }
+  
+    .skillCard {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+  
+    .label {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skillsSection {
+      padding: 20px 10px;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  
+    .skillsContainer {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+  
+    .skillCard {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .icon {
+      font-size: 1.5rem;
+    }
+  
+    .label {
+      font-size: 0.7rem;
+    }
+  }
