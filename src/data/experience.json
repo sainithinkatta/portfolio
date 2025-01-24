@@ -3,7 +3,7 @@
     "role": "Software Engineer",
     "organisation": "Quinbay",
     "experiences": [
-      "Engineered scalable web pages for warehouse management based on Figma specifications using ReactJS, implementing backend microservice changes with Spring Boot, adhering to Agile/SDLC methodologies for requirement analysis, development, testing, and release cycles.",
+      "Worked on scalable web pages for warehouse management based on Figma specifications using ReactJS, implementing backend microservice changes with Spring Boot, adhering to Agile/SDLC methodologies for requirement analysis, development, testing, and release cycles.",
       "Spearheaded the migration of Stockholm’s inbound frontend codebase from AngularJS to Vue.js, delivering a complete overhaul that improved functionality and performance.",
       "Integrated Tailwind and Bootstrap 3 CSS frameworks to develop a responsive, visually appealing web pages, while building reusable CSS utility components using Blibli’s internal libraries.",
       "Authored comprehensive unit tests using Jest, which ensured code quality and boosted code reliability and maintainability. Wrote integration test cases with Playwright, enhancing end-to-end testing coverage and minimizing production bugs.",
