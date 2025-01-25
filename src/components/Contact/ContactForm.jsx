@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
 
@@ -19,7 +20,7 @@ export default function ContactForm () {
       .then(
         () => {
           alert("Message sent successfully!");
-          formRef.current.reset(); // Reset the form fields
+          formRef.current.reset();
         },
         () => {
           alert("Failed to send message. Please try again.");
@@ -28,35 +29,47 @@ export default function ContactForm () {
   };
 
   return  (
-    <form ref={formRef} onSubmit={handleSubmit} className={styles.contactForm}>
+    <form 
+      ref={formRef} 
+      onSubmit={handleSubmit} 
+      className={styles.contactForm}
+    >
         <input
             type="text"
             name="to_name"
             placeholder="Name *"
-            className={styles.inputField}
             required
+            className={styles.inputField}
         />
+
         <input
             type="email"
             name="email_id"
             placeholder="Email *"
-            className={styles.inputField}
             required
+            className={styles.inputField}
         />
+
         <input
             type="text"
             name="subject"
             placeholder="Subject *"
-            className={styles.inputField}
             required
+            className={styles.inputField}
         />
+
         <textarea
             name="message"
             placeholder="Message *"
             className={styles.textareaField}
             required
-        ></textarea>
-        <button type="submit" className={styles.submitButton}>
+        >
+        </textarea>
+
+        <button 
+          type="submit" 
+          className={styles.submitButton}
+        >
             Submit
         </button>
     </form>

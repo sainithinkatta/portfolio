@@ -1,11 +1,13 @@
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
-
 import ContactForm from "./ContactForm";
 
 export const Contact = () => {
   return (
-    <footer id="contact" className={styles.container}>
+    <footer 
+      id="contact" 
+      className={styles.container}
+    >
       <div className={styles.text}>
         <h3 className={styles.sitename}>Contact</h3>
         <p className={styles.tagline}>Code. Create. Collaborate.</p>
@@ -24,6 +26,7 @@ export const Contact = () => {
             className={styles.icon}
           />
         </a>
+ 
         <a
           href="https://linkedin.com/in/sai-nithin-katta-1401001b7/"
           target="_blank"
@@ -36,6 +39,7 @@ export const Contact = () => {
             className={styles.icon}
           />
         </a>
+
         <a
           href="https://github.com/sainithinkatta"
           target="_blank"
@@ -49,6 +53,7 @@ export const Contact = () => {
           />
         </a>
       </div>
+
       <div className={styles.footerBottom}>
         <span>Copyright - All Rights Reserved</span>
       </div>
