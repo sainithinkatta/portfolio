@@ -1,6 +1,5 @@
 @import "../../vars.css";
 
-
   .skillsSection {
     position: relative;
     border-radius: 15px;
@@ -124,31 +123,5 @@
   
     .label {
       font-size: 0.8rem;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .skillsSection {
-      padding: 20px 10px;
-      margin-left: 3%;
-      margin-right: 3%;
-    }
-  
-    .skillsContainer {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-    }
-  
-    .skillCard {
-      width: 90px;
-      height: 90px;
-    }
-  
-    .icon {
-      font-size: 1.5rem;
-    }
-  
-    .label {
-      font-size: 0.7rem;
     }
   }

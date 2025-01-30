@@ -33,7 +33,7 @@ export const Profile = () => {
         }
       >
         <img
-          src={getImageUrl("hero/heroImage.png")}
+          src={getImageUrl("profile/profile.png")}
           alt="Profile image of me"
           className={styles.heroImg}
           onLoad={() => setIsImageLoaded(true)}
