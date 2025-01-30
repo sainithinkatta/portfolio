@@ -1,11 +1,14 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Quinbay",
-    "experiences": [
+    "title": "Software Engineer",
+    "company_name": "Quinbay",
+    "iconPath": "experience/quinbay.png",
+    "iconBg": "#161329",
+    "date": "July 2022 - July 2023",
+    "points": [
       "Worked on scalable web pages for warehouse management based on Figma specifications using ReactJS, implementing backend microservice changes with Spring Boot, adhering to Agile/SDLC methodologies for requirement analysis, development, testing, and release cycles.",
       "Spearheaded the migration of Stockholm’s inbound frontend codebase from AngularJS to Vue.js, delivering a complete overhaul that improved functionality and performance.",
-      "Integrated Tailwind and Bootstrap 3 CSS frameworks to develop a responsive, visually appealing web pages, while building reusable CSS utility components using Blibli’s internal libraries.",
+      "Integrated Tailwind and Bootstrap 3 CSS frameworks to develop responsive, visually appealing web pages, while building reusable CSS utility components using Blibli’s internal libraries.",
       "Authored comprehensive unit tests using Jest, which ensured code quality and boosted code reliability and maintainability. Wrote integration test cases with Playwright, enhancing end-to-end testing coverage and minimizing production bugs.",
       "Optimized code quality by reducing application error rates from 2.5% to 0.5% through continuous refinement and proactive issue resolution.",
       "Facilitated code reviews and mentored new UI interns, fostering adherence to best practices and ensuring high-quality deliverables.",
@@ -16,18 +19,24 @@
     ]
   },
   {
-    "role": "Software Engineer Intern",
-    "organisation": "Quinbay",
-    "experiences": [
+    "title": "Software Engineer Intern",
+    "company_name": "Quinbay",
+    "iconPath": "experience/quinbay.png",
+    "iconBg": "#161329",
+    "date": "Jan 2022 - July 2022",
+    "points": [
       "Implemented a robust UI for monitoring user authentication, enhancing login functionality across internal team projects such as Pagebook, Quora, and KBC. This initiative ensured a cohesive and secure user experience, managed centrally by the Common Infra Management microservice.",
       "Developed an e-commerce application named CommerceNest using VueJS and Spring Boot, enabling users to place orders and checkout for desired purchases.",
       "Transitioned from internship to working on B2B domains of e-commerce leveraging prior experience to contribute effectively to project development and execution."
     ]
   },
   {
-    "role": "Software Developer Intern",
-    "organisation": "APSSDC",
-    "experiences": [
+    "title": "Software Developer Intern",
+    "company_name": "APSSDC",
+    "iconPath": "experience/apssdc.png",
+    "iconBg": "#161329",
+    "date": "June 2021 - Aug 2021",
+    "points": [
       "Gained proficiency in the Django framework, focusing on the integration between frontend and backend applications.",
       "Developed a secure online voting application using the Django framework, allowing users to vote for specific candidates. Utilized MySQL for efficient data storage and management, ensuring a seamless user experience."
     ]

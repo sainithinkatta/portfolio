@@ -1,5 +1,5 @@
 import styles from "./App.module.css";
-import { Experience } from "./components/Experience/Experience";
+import  Experience  from "./components/Experience/Experience";
 import { Contact } from "./components/Contact/Contact";
 import { Profile } from "./components/Profile/Profile";
 import { Navbar } from "./components/Navbar/Navbar";
