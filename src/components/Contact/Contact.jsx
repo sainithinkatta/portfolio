@@ -1,6 +1,7 @@
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 import ContactForm from "./ContactForm";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 export const Contact = () => {
   return (
@@ -57,6 +58,8 @@ export const Contact = () => {
       <div className={styles.footerBottom}>
         <span>Copyright - All Rights Reserved</span>
       </div>
+
+      <ScrollToTop />
     </footer>
   );
 };
