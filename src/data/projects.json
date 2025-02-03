@@ -1,22 +1,10 @@
 [
-  {
-      "title": "Movie Mania",
-      "description": "Developed a dynamic movie web application utilizing AngularJS for the frontend.",
-      "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
-      "source": "https://github.com/sainithinkatta/Movie-Mania"
-  },
-  {
-      "title": "Task Buster",
-      "description": "Developed a dynamic Todo application using ReactJS for the frontend.",
-      "skills": ["ReactJS", "Javascript", "HTML", "CSS"],
-      "source": "https://github.com/sainithinkatta/TaskBuster"
-  },
-  {
-      "title": "Online Voting System",
-      "description": "Developed a full-stack online voting web application using Django.",
-      "skills": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
-      "source": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django"
-  },
+    {
+        "title": "Online Voting System",
+        "description": "Developed a full-stack online voting web application using Django.",
+        "skills": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
+        "source": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django"
+    },
     {
         "title": "Employee Churn Prediction",
         "description": "This project aims to analyze key factors influencing employee turnover and develop a predictive model to enhance retention strategies.",
@@ -28,6 +16,24 @@
         "description": "Application built with Flask that facilitates the management of patient health data through a user-friendly interface.",
         "skills": ["Flask", "Python", "Javascript", "HTML", "CSS", "SQ Lite"],
         "source": "https://github.com/sainithinkatta/Health-Monitoring-System-using-Flask"
+    },
+    {
+        "title": "Weather App",
+        "description": "A responsive web application that provides real-time weather information for any location worldwide, built with React and Vite for fast performance.",
+        "skills": ["React", "Vite", "JavaScript", "HTML", "CSS"],
+        "source": "https://github.com/sainithinkatta/weather-app"
+    },
+    {
+        "title": "Task Buster",
+        "description": "Developed a dynamic Todo application using ReactJS for the frontend.",
+        "skills": ["ReactJS", "Javascript", "HTML", "CSS"],
+        "source": "https://github.com/sainithinkatta/TaskBuster"
+    },
+    {
+        "title": "Movie Mania",
+        "description": "Developed a dynamic movie web application utilizing AngularJS for the frontend.",
+        "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
+        "source": "https://github.com/sainithinkatta/Movie-Mania"
     },
     {
         "title": "Body Mass Index",
