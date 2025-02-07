@@ -1,5 +1,11 @@
 [
     {
+        "title": "Real Time Threat Intelligence",
+        "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management. Implemented two-factor authentication for login and signup.",
+        "skills": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+        "source": "https://github.com/sainithinkatta/Real-Time-Threat-Intelligence"
+    },
+    {
         "title": "Online Voting System",
         "description": "Developed a full-stack online voting web application using Django.",
         "skills": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
@@ -34,11 +40,5 @@
         "description": "Developed a dynamic movie web application utilizing AngularJS for the frontend.",
         "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
         "source": "https://github.com/sainithinkatta/Movie-Mania"
-    },
-    {
-        "title": "Body Mass Index",
-        "description": "This application provides users with a simple and efficient way to calculate and understand their BMI.",
-        "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
-        "source": "https://github.com/sainithinkatta/BMI-Web-Application-using-AngularJS"
     }
 ]
