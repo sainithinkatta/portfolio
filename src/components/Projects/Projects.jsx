@@ -1,9 +1,21 @@
 import styles from "./Projects.module.css";
 import projects from "../../data/projects.json";
 import weatherApp from "../../assets/projects/weather_app.png";
+import bmiCalculator from "../../assets/projects/bmi_calculator.png";
+import employeeChurn from "../../assets/projects/employee_churn.png";
+import healthMonitoring from "../../assets/projects/health_monitoring.png";
+import movieMania from "../../assets/projects/movie_mania.png";
+import onlineVoting from "../../assets/projects/online_voting.png";
+import taskBuster from "../../assets/projects/task_buster.png";
 
 const projectImages = {
   "Weather App": weatherApp,
+  "Body Mass Index": bmiCalculator,
+  "Online Voting System": onlineVoting,
+  "Employee Churn Prediction": employeeChurn,
+  "Health Monitoring System": healthMonitoring,
+  "Task Buster": taskBuster,
+  "Movie Mania": movieMania
 };
 
 export const Projects = () => {
