@@ -1,0 +1,82 @@
+@import "../../vars.css";
+
+.certificationsSection {
+  position: relative;
+  border-radius: 15px;
+  padding: 50px;
+  margin: 100px 10% 5%;
+  z-index: 1;
+  background-color: var(--color-background);
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.certificatesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #2b2f33;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text);
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.pdfContainer {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pdfViewer {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.cardFooter {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
