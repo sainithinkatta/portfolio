@@ -3,7 +3,7 @@
         "title": "Real Time Threat Intelligence",
         "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management. Implemented two-factor authentication for login and signup.",
         "skills": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
-        "source": "https://github.com/sainithinkatta/Real-Time-Threat-Intelligence"
+        "source": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard"
     },
     {
         "title": "Online Voting System",
