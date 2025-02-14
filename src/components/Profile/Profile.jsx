@@ -43,6 +43,8 @@ export const Profile = () => {
       </div>
 
       <div className={styles.content}>
+        <p>Hello, this is</p>
+
         <h1 className={styles.title}>
           {typedName}<span className={styles.cursor}>|</span>
         </h1>
