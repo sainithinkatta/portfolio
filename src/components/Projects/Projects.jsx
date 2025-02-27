@@ -8,6 +8,7 @@ import movieMania from "../../assets/projects/movie_mania.png";
 import onlineVoting from "../../assets/projects/online_voting.png";
 import taskBuster from "../../assets/projects/task_buster.png";
 import realTimeThreatAnalysis from "../../assets/projects/real_time_threat_ananalysis.png";
+import notesApp from "../../assets/projects/notes_app.png";
 
 const projectImages = {
   "Weather App": weatherApp,
@@ -17,7 +18,8 @@ const projectImages = {
   "Health Monitoring System": healthMonitoring,
   "Task Buster": taskBuster,
   "Movie Mania": movieMania,
-  "Real Time Threat Intelligence": realTimeThreatAnalysis
+  "Real Time Threat Intelligence": realTimeThreatAnalysis,
+  "NoteMate": notesApp
 };
 
 export const Projects = () => {

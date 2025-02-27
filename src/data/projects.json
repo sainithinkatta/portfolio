@@ -1,7 +1,13 @@
 [
     {
+        "title": "NoteMate",
+        "description": "NoteMate is a MERN stack app for secure note management with JWT authentication.",
+        "skills": ["React.js", "Express.js", "Node.js", "MongoDB", "JWT", "TailwindCSS"],
+        "source": "https://github.com/sainithinkatta/note-mate"
+    },    
+    {
         "title": "Real Time Threat Intelligence",
-        "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management. Implemented two-factor authentication for login and signup.",
+        "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management.",
         "skills": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
         "source": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard"
     },
