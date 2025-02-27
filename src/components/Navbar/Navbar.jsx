@@ -1,6 +1,12 @@
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -9,7 +15,15 @@ export const Navbar = () => {
       </a>
 
       <div className={styles.menu}>
-        <ul className={styles.menuItems}>
+        <div className={styles.menuBtn} onClick={toggleMenu}>
+          <div className={styles.hamburger}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+        <ul className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}>
           <li>
             <a href="#skills">Skills</a>
           </li>
