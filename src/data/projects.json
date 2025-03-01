@@ -12,6 +12,12 @@
         "source": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard"
     },
     {
+        "title": "CommerceNest",
+        "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
+        "skills": ["VueJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+        "source": "https://github.com/sainithinkatta/commerce-nest"
+    },
+    {
         "title": "Online Voting System",
         "description": "Developed a full-stack online voting web application using Django.",
         "skills": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
