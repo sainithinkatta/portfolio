@@ -46,12 +46,26 @@ export const Projects = () => {
               </p>
             </div>
             <div className={styles.cardFooter}>
+              {
+                project.live ? (
+                  <a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.projectBtn}
+                  >
+                    <button className={styles.button}>Live</button>
+                  </a>
+                ) : null
+              }
+
               <a 
                 href={project.source} 
                 target="_blank" 
                 rel="noopener noreferrer"
+                className={styles.projectBtn}
               >
-                <button className={styles.button}>View</button>
+                <button className={styles.button}>Code</button>
               </a>
             </div>
           </div>

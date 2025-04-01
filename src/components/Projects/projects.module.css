@@ -114,3 +114,7 @@
     object-fit: cover;
     transition: transform 0.3s ease;
   }
+
+  .projectBtn {
+    margin-right: 10px;
+  }

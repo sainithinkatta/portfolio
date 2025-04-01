@@ -1,9 +1,10 @@
 [
     {
         "title": "NoteMate",
-        "description": "NoteMate is a MERN stack app for secure note management with JWT authentication.",
+        "description": "NoteMate is a MERN stack app for secure notes with JWT authentication.",
         "skills": ["React.js", "Express.js", "Node.js", "MongoDB", "JWT", "TailwindCSS"],
-        "source": "https://github.com/sainithinkatta/note-mate"
+        "source": "https://github.com/sainithinkatta/note-mate",
+        "live": "https://note-mate-zeta.vercel.app/"
     },    
     {
         "title": "Real Time Threat Intelligence",
@@ -39,7 +40,8 @@
         "title": "Weather App",
         "description": "A responsive web application that provides real-time weather information for any location worldwide, built with React and Vite for fast performance.",
         "skills": ["React", "Vite", "JavaScript", "HTML", "CSS"],
-        "source": "https://github.com/sainithinkatta/weather-app"
+        "source": "https://github.com/sainithinkatta/weather-app",
+        "live": "https://sainithinkatta.github.io/weather-app/"
     },
     {
         "title": "Task Buster",
