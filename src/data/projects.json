@@ -7,16 +7,17 @@
         "live": "https://note-mate-zeta.vercel.app/"
     },    
     {
+        "title": "CommerceNest",
+        "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
+        "skills": ["VueJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+        "source": "https://github.com/sainithinkatta/commerce-nest",
+        "live": "https://commerce-nest-beta.vercel.app/"
+    },
+    {
         "title": "Real Time Threat Intelligence",
         "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management.",
         "skills": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
         "source": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard"
-    },
-    {
-        "title": "CommerceNest",
-        "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
-        "skills": ["VueJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
-        "source": "https://github.com/sainithinkatta/commerce-nest"
     },
     {
         "title": "Online Voting System",
