@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './ScrollToTop.module.css';
-import upArrow from '/Users/sainithin/Desktop/projects/my-portfolio/src/assets/up-arrow.png';
+import upArrow from '../../assets/up-arrow.png';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
