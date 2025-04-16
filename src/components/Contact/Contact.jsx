@@ -1,5 +1,5 @@
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
+// import { getImageUrl } from "../../utils";
 import ContactForm from "./ContactForm";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
@@ -22,7 +22,7 @@ export const Contact = () => {
           className={styles.socialIcon}
         >
           <img
-            src={getImageUrl("contact/emailIcon.png")}
+            // src={getImageUrl("contact/emailIcon.png")}
             alt="Email"
             className={styles.icon}
           />
@@ -35,7 +35,7 @@ export const Contact = () => {
           className={styles.socialIcon}
         >
           <img
-            src={getImageUrl("contact/linkedinIcon.png")}
+            // src={getImageUrl("contact/linkedinIcon.png")}
             alt="LinkedIn"
             className={styles.icon}
           />
@@ -48,7 +48,7 @@ export const Contact = () => {
           className={styles.socialIcon}
         >
           <img
-            src={getImageUrl("contact/githubIcon.png")}
+            // src={getImageUrl("contact/githubIcon.png")}
             alt="GitHub"
             className={styles.icon}
           />

@@ -1,4 +1,3 @@
-import styles from "./App.module.css";
 import  Experience  from "./components/Experience/Experience";
 import { Contact } from "./components/Contact/Contact";
 import { Profile } from "./components/Profile/Profile";
@@ -7,9 +6,11 @@ import { Certifications } from "./components/Certifications/Certifications";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
 
+import './App.css';
+
 function App() {
   return (
-    <div className={styles.App}>
+    <div>
       <Navbar />
       <Profile />
       <Skills />

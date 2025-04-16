@@ -5,7 +5,7 @@ import {
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import experiences from '../../data/experience.json';
-import { getImageUrl } from "../../utils";
+// import { getImageUrl } from "../../utils";
 import styles from './Experience.module.css';
 
 const ExperienceCard = ({ experience }) => (
@@ -26,7 +26,7 @@ const ExperienceCard = ({ experience }) => (
     icon={
       <div className={styles.iconWrapper}>
         <img
-          src={getImageUrl(experience.iconPath)}
+          // src={getImageUrl(experience.iconPath)}
           alt={experience.company_name}
           className={styles.icon}
         />

@@ -1,4 +1,3 @@
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import styles from './Skills.module.css';
 
 export const Skills = () => {

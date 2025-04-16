@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import styles from "./Profile.module.css";
-import { getImageUrl } from "../../utils";
+// import { getImageUrl } from "../../utils";
 import profileData from '../../data/profile.json';
 
 export const Profile = () => {
@@ -33,7 +33,7 @@ export const Profile = () => {
         }
       >
         <img
-          src={getImageUrl("profile/profile.png")}
+          // src={getImageUrl("profile/profile.png")}
           alt="Profile image of me"
           className={styles.heroImg}
           onLoad={() => setIsImageLoaded(true)}
