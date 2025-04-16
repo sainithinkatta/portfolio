@@ -1,25 +1,14 @@
-import  Experience  from "./components/Experience/Experience";
-import { Contact } from "./components/Contact/Contact";
-import { Profile } from "./components/Profile/Profile";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Certifications } from "./components/Certifications/Certifications";
-import { Projects } from "./components/Projects/Projects";
-import { Skills } from "./components/Skills/Skills";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 
-import './App.css';
-
-function App() {
-  return (
-    <div>
-      <Navbar />
-      <Profile />
-      <Skills />
-      <Certifications />
-      <Experience />
-      <Projects />
-      <Contact />
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter basename="/portfolio">
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;

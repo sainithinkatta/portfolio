@@ -1,11 +1,23 @@
 [
   {
+    "title": "Senior Frontend Developer",
+    "company": "Tech Innovations Inc.",
+    "location": "San Francisco, CA",
+    "period": "Jan 2022 - Present",
+    "description": [
+      "Led the development of a React-based dashboard that increased user engagement by 40%",
+      "Implemented advanced state management using Redux and Context API",
+      "Collaborated with UI/UX designers to create responsive and accessible interfaces",
+      "Mentored junior developers and conducted code reviews"
+    ],
+    "current": true
+  },
+  {
     "title": "Software Engineer",
-    "company_name": "Quinbay",
-    "iconPath": "experience/quinbay.png",
-    "iconBg": "#161329",
-    "date": "Jan 2022 - July 2023",
-    "points": [
+    "company": "Quinbay",
+    "location": "",
+    "period": "Jan 2022 - July 2023",
+    "description": [
       "Worked on scalable web pages for warehouse management based on Figma specifications using ReactJS, implementing backend microservice changes with Spring Boot, adhering to Agile/SDLC methodologies for requirement analysis, development, testing, and release cycles.",
       "Spearheaded the migration of Stockholm’s inbound frontend codebase from AngularJS to Vue.js, delivering a complete overhaul that improved functionality and performance.",
       "Integrated Tailwind and Bootstrap 3 CSS frameworks to develop responsive, visually appealing web pages, while building reusable CSS utility components using Blibli’s internal libraries.",
@@ -20,11 +32,10 @@
   },
   {
     "title": "Software Developer Intern",
-    "company_name": "APSSDC",
-    "iconPath": "experience/apssdc.png",
-    "iconBg": "#161329",
-    "date": "June 2021 - Aug 2021",
-    "points": [
+    "company": "APSSDC",
+    "location": "",
+    "period": "June 2021 - Aug 2021",
+    "description": [
       "Gained proficiency in the Django framework, focusing on the integration between frontend and backend applications.",
       "Developed a secure online voting application using the Django framework, allowing users to vote for specific candidates. Utilized MySQL for efficient data storage and management, ensuring a seamless user experience."
     ]

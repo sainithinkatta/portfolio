@@ -1,59 +1,60 @@
 [
     {
-        "title": "NoteMate",
-        "description": "NoteMate is a MERN stack app for secure notes with JWT authentication.",
-        "skills": ["React.js", "Express.js", "Node.js", "MongoDB", "JWT", "TailwindCSS"],
-        "source": "https://github.com/sainithinkatta/note-mate",
-        "live": "https://note-mate-zeta.vercel.app/"
-    },    
-    {
-        "title": "CommerceNest",
-        "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
-        "skills": ["VueJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
-        "source": "https://github.com/sainithinkatta/commerce-nest",
-        "live": "https://commerce-nest-beta.vercel.app/"
+      "title": "NoteMate",
+      "description": "NoteMate is a MERN stack app for secure notes with JWT authentication.",
+      "image": "https://via.placeholder.com/500",
+      "tags": ["React.js", "Express.js", "Node.js", "MongoDB", "JWT", "TailwindCSS"],
+      "liveUrl": "https://note-mate-zeta.vercel.app/",
+      "repoUrl": "https://github.com/sainithinkatta/note-mate",
+      "detailedDescription": "NoteMate is a secure note-taking application built using the MERN stack, with JWT-based authentication for user security.",
+      "features": [
+        "Secure note storage with authentication",
+        "Real-time data syncing using MongoDB",
+        "Responsive design using TailwindCSS",
+        "Fast, responsive UI with React"
+      ]
     },
     {
-        "title": "Real Time Threat Intelligence",
-        "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management.",
-        "skills": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
-        "source": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard"
+      "title": "CommerceNest",
+      "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
+      "image": "https://via.placeholder.com/500",
+      "tags": ["VueJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+      "liveUrl": "https://commerce-nest-beta.vercel.app/",
+      "repoUrl": "https://github.com/sainithinkatta/commerce-nest",
+      "detailedDescription": "A full-stack eCommerce platform built with Vue, Express.js, and MongoDB, providing a seamless shopping experience.",
+      "features": [
+        "Product catalog with search and filtering",
+        "User authentication and profile management",
+        "Shopping cart and checkout process",
+        "Order history and tracking"
+      ]
     },
     {
-        "title": "Online Voting System",
-        "description": "Developed a full-stack online voting web application using Django.",
-        "skills": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
-        "source": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django"
+      "title": "Real Time Threat Intelligence",
+      "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management.",
+      "image": "https://via.placeholder.com/500",
+      "tags": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+      "repoUrl": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard",
+      "detailedDescription": "A threat intelligence application integrating multiple security modules, designed to manage and analyze cyber threats in real time.",
+      "features": [
+        "Asset Management for tracking digital assets",
+        "Threat Intelligence for real-time monitoring",
+        "Vulnerability Risk Assessment and incident response",
+        "Crisis Management tools for effective decision-making"
+      ]
     },
     {
-        "title": "Employee Churn Prediction",
-        "description": "This project aims to analyze key factors influencing employee turnover and develop a predictive model to enhance retention strategies.",
-        "skills": ["Python", "Data Analysis", "Data Visualization", "Machine Learning"],
-        "source": "https://github.com/sainithinkatta/Employee-Churn-Prediction-using-ML-Algorithms"
-    },
-    {
-        "title": "Health Monitoring System",
-        "description": "Application built with Flask that facilitates the management of patient health data through a user-friendly interface.",
-        "skills": ["Flask", "Python", "Javascript", "HTML", "CSS", "SQ Lite"],
-        "source": "https://github.com/sainithinkatta/Health-Monitoring-System-using-Flask"
-    },
-    {
-        "title": "Weather App",
-        "description": "A responsive web application that provides real-time weather information for any location worldwide, built with React and Vite for fast performance.",
-        "skills": ["React", "Vite", "JavaScript", "HTML", "CSS"],
-        "source": "https://github.com/sainithinkatta/weather-app",
-        "live": "https://sainithinkatta.github.io/weather-app/"
-    },
-    {
-        "title": "Task Buster",
-        "description": "Developed a dynamic Todo application using ReactJS for the frontend.",
-        "skills": ["ReactJS", "Javascript", "HTML", "CSS"],
-        "source": "https://github.com/sainithinkatta/TaskBuster"
-    },
-    {
-        "title": "Movie Mania",
-        "description": "Developed a dynamic movie web application utilizing AngularJS for the frontend.",
-        "skills": ["AngularJS", "Javascript", "HTML", "CSS"],
-        "source": "https://github.com/sainithinkatta/Movie-Mania"
+      "title": "Online Voting System",
+      "description": "Developed a full-stack online voting web application using Django.",
+      "image": "https://via.placeholder.com/500",
+      "tags": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
+      "repoUrl": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django",
+      "detailedDescription": "An online voting system using Django, allowing users to securely cast votes and administrators to manage election data.",
+      "features": [
+        "User authentication for secure voting",
+        "Real-time vote tallying and results",
+        "Admin interface for managing elections",
+        "Vote validation and security measures"
+      ]
     }
-]
+  ]  
