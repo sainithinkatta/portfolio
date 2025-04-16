@@ -31,7 +31,7 @@
     },
     {
       "title": "Real Time Threat Intelligence",
-      "description": "Developed a comprehensive full stack application integrating various modules including Asset Management, Threat Intelligence, Vulnerability Risk Assessment, Incident Response, and Crisis Management.",
+      "description": "Developed a comprehensive full stack application integrating various modules.",
       "image": "https://via.placeholder.com/500",
       "tags": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
       "repoUrl": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard",
