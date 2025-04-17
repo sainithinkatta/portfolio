@@ -8,7 +8,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center text-center">
-          <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mb-8 mt-8 sm:mt-0 animate-float overflow-hidden">
+          <div className="mt-8 md:mt-0 w-28 h-28 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mb-8 animate-float overflow-hidden">
             <div className="w-full h-full rounded-full border-4 border-background overflow-hidden">
               <img
                 src={profile}
@@ -30,16 +30,16 @@ const Hero = () => {
 
           <div className="text-muted-foreground text-base md:text-sm leading-relaxed max-w-4xl mb-8 animate-fade-in delay-150">
             <p className="mb-4">
-              Hi, I’m a passionate Full Stack Developer with hands-on experience building scalable, user-focused web applications from the ground up. I specialize in combining strong responsive frontend design along with backend engineering.
+              Hi, I'm a passionate Full Stack Developer with hands-on experience building scalable, user-focused web applications from the ground up. I specialize in combining strong responsive frontend design along with backend engineering.
             </p>
             <p className="mb-4">
               I bring a deep technical toolkit to the table: from crafting RESTful APIs with <strong>Java, Spring Boot</strong>, and <strong>Node.js</strong>, to designing modern interfaces using <strong>React, Angular, Vue</strong>, and <strong>Tailwind</strong>. I thrive in fast-paced, Agile environments and have worked with cross-functional teams to deliver high-impact features with a focus on quality and performance.
             </p>
             <p className="mb-4">
-              My recent experience includes developing banking solutions at <strong>Assurant</strong> and smart warehouse systems at <strong>Quinbay</strong>. I love building efficient, maintainable code and continuously strive to push the boundaries of what’s possible in software engineering.
+              My recent experience includes developing banking solutions at <strong>Assurant</strong> and smart warehouse systems at <strong>Quinbay</strong>. I love building efficient, maintainable code and continuously strive to push the boundaries of what's possible in software engineering.
             </p>
             <p>
-              <strong>Let’s build something amazing together !!</strong>
+              <strong>Let's build something amazing together !!</strong>
             </p>
           </div>
 
