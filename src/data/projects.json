@@ -18,7 +18,7 @@
       "title": "CommerceNest",
       "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
       "image": "https://via.placeholder.com/500",
-      "tags": ["VueJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+      "tags": ["VueJS", "NodeJS", "MongoDB"],
       "liveUrl": "https://commerce-nest-beta.vercel.app/",
       "repoUrl": "https://github.com/sainithinkatta/commerce-nest",
       "detailedDescription": "A full-stack eCommerce platform built with Vue, Express.js, and MongoDB, providing a seamless shopping experience.",
@@ -33,7 +33,7 @@
       "title": "Real Time Threat Intelligence",
       "description": "Developed a comprehensive full stack application integrating various modules.",
       "image": "https://via.placeholder.com/500",
-      "tags": ["ReactJS", "NodeJS", "HTML", "CSS", "Javascript", "MongoDB"],
+      "tags": ["ReactJS", "NodeJS", "MongoDB"],
       "repoUrl": "https://github.com/Institute-of-Automation-Research-Eng/Centralized_Dashboard",
       "detailedDescription": "A threat intelligence application integrating multiple security modules, designed to manage and analyze cyber threats in real time.",
       "features": [
@@ -47,7 +47,7 @@
       "title": "Online Voting System",
       "description": "Developed a full-stack online voting web application using Django.",
       "image": "https://via.placeholder.com/500",
-      "tags": ["Django", "Python", "Javascript", "HTML", "CSS", "SQL"],
+      "tags": ["Django", "Python", "Javascript","SQL"],
       "repoUrl": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django",
       "detailedDescription": "An online voting system using Django, allowing users to securely cast votes and administrators to manage election data.",
       "features": [

@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -34,7 +34,7 @@ const Header = () => {
               SN
             </a>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -47,7 +47,7 @@ const Header = () => {
               </button>
             ))}
           </nav>
-          
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-md text-foreground"
@@ -58,26 +58,23 @@ const Header = () => {
           </button>
         </div>
       </div>
-      
-      {/* Mobile Navigation */}
-      <div
-        className={cn(
-          "fixed inset-0 top-16 z-40 bg-background md:hidden overflow-hidden transition-transform duration-300 ease-in-out",
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        )}
-      >
-        <nav className="flex flex-col items-center space-y-6 py-8">
-          {navLinks.map((link) => (
-            <button
-              key={link.id}
-              className="text-lg text-foreground hover:text-primary transition-colors"
-              onClick={() => scrollToSection(link.id)}
-            >
-              {link.name}
-            </button>
-          ))}
-        </nav>
-      </div>
+
+      {/* Mobile Navigation - Fixed positioning with proper z-index */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-x-0 top-16 z-40 bg-background md:hidden">
+          <nav className="flex flex-col items-center space-y-6 py-8 px-4">
+            {navLinks.map((link) => (
+              <button
+                key={link.id}
+                className="text-lg text-foreground hover:text-primary transition-colors w-full text-center"
+                onClick={() => scrollToSection(link.id)}
+              >
+                {link.name}
+              </button>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
