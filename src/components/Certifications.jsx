@@ -17,51 +17,53 @@ const Certifications = () => {
             Professional certifications I've earned
           </p>
         </div>
-        
-        {/* Certifications Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-          {certificationsData.map((cert, index) => (
-            <Card key={index} className="overflow-hidden transition-all hover:shadow-md">
-              <CardContent className="p-4 sm:p-6">
-                {/* Certification Title */}
-                <div className="flex items-center mb-4">
-                  <div className="p-2 bg-primary/10 rounded-full mr-3">
-                    <Award className="text-primary" size={24} />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold">{cert.title}</h3>
-                </div>
 
-                {/* Certification Details */}
-                <div className="mb-4 space-y-2">
-                  <div className="flex items-start">
-                    <span className="font-medium mr-2">Issuer:</span>
-                    <span>{cert.issuer}</span>
+        {/* Certifications Grid - Fixed for centering */}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 w-full max-w-4xl">
+            {certificationsData.map((cert, index) => (
+              <Card key={index} className="overflow-hidden transition-all hover:shadow-md">
+                <CardContent className="p-4 sm:p-6">
+                  {/* Certification Title */}
+                  <div className="flex items-center mb-4">
+                    <div className="p-2 bg-primary/10 rounded-full mr-3">
+                      <Award className="text-primary" size={24} />
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-semibold">{cert.title}</h3>
                   </div>
-                  <div className="flex items-center">
-                    <Calendar size={16} className="mr-1.5 text-muted-foreground" />
-                    <span className="text-xs sm:text-sm text-muted-foreground">{cert.date}</span>
-                  </div>
-                </div>
 
-                {/* Skills */}
-                <div className="mb-4">
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {cert.skills.map((skill, skillIndex) => (
-                      <Badge key={skillIndex} variant="secondary">{skill}</Badge>
-                    ))}
+                  {/* Certification Details */}
+                  <div className="mb-4 space-y-2">
+                    <div className="flex items-start">
+                      <span className="font-medium mr-2">Issuer:</span>
+                      <span>{cert.issuer}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Calendar size={16} className="mr-1.5 text-muted-foreground" />
+                      <span className="text-xs sm:text-sm text-muted-foreground">{cert.date}</span>
+                    </div>
                   </div>
-                </div>
 
-                {/* View Certificate Button */}
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href={cert.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                    <span className="mr-1">View Certificate</span>
-                    <ExternalLink size={14} />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                  {/* Skills */}
+                  <div className="mb-4">
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {cert.skills.map((skill, skillIndex) => (
+                        <Badge key={skillIndex} variant="secondary">{skill}</Badge>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* View Certificate Button */}
+                  <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href={cert.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <span className="mr-1">View Certificate</span>
+                      <ExternalLink size={14} />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
