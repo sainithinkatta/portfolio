@@ -4,18 +4,11 @@ import { Button } from '@/components/ui/button';
 import profile from "../assets/sainithin.png";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex flex-col items-center text-center mt-auto">
-          <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mb-8 animate-float overflow-hidden">
+        <div className="flex flex-col items-center text-center">
+          <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mb-8 mt-8 sm:mt-0 animate-float overflow-hidden">
             <div className="w-full h-full rounded-full border-4 border-background overflow-hidden">
               <img
                 src={profile}
