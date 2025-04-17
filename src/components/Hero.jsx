@@ -37,7 +37,7 @@ const Hero = () => {
 
           <div className="text-muted-foreground text-base md:text-sm leading-relaxed max-w-4xl mb-8 animate-fade-in delay-150">
             <p className="mb-4">
-              Hi, I’m a passionate Full Stack Developer with hands-on experience building scalable, user-focused web applications from the ground up. I specialize in Full Stack Development, combining strong responsive frontend design along with backend engineering.
+              Hi, I’m a passionate Full Stack Developer with hands-on experience building scalable, user-focused web applications from the ground up. I specialize in combining strong responsive frontend design along with backend engineering.
             </p>
             <p className="mb-4">
               I bring a deep technical toolkit to the table: from crafting RESTful APIs with <strong>Java, Spring Boot</strong>, and <strong>Node.js</strong>, to designing modern interfaces using <strong>React, Angular, Vue</strong>, and <strong>Tailwind</strong>. I thrive in fast-paced, Agile environments and have worked with cross-functional teams to deliver high-impact features with a focus on quality and performance.
