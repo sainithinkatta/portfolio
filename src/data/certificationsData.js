@@ -1,5 +1,12 @@
 const certificationsData = [
   {
+    title: "React - The Complete Guide 2025 (incl. Next.js, Redux)",
+    issuer: "Udemy",
+    date: "April 22 2025",
+    skills: ["React", "Next.js", "Redux"],
+    url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-f9976c51-28fc-47f5-9398-081b1ba899f3.pdf",
+  },
+  {
     title: "Google Cloud Fundamentals",
     issuer: "Coursera",
     date: "June 28 2021",

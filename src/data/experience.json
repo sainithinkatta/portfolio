@@ -5,41 +5,42 @@
     "location": "USA",
     "period": "Jan 2024 - Present",
     "description": [
-      "Collaborated with 4 cross-functional teams on a banking initiative and mentored a team of 5 interns, ensuring on-time feature delivery through Agile practices like Scrum",
-      "Built and launched 3 responsive portals using Spring MVC, HTML, CSS, ReactJS, Angular, and Svelte to deliver dynamic, user-friendly front-end experiences",
-      "Developed RESTful APIs with Java 8 and Spring Boot to support real-time data operations, integrating Hibernate with both SQL and NoSQL (MongoDB) databases",
-      "Maintained 8 microservice codebases using Git and Bitbucket, implemented Apache Camel for routing, and deployed services on OpenShift and JBoss",
-      "Configured Tomcat servers and Jenkins CI/CD pipelines across 6 projects, reducing deployment time by 25%, while incorporating Splunk for monitoring and building AWS Lambda-based serverless microservices with S3 and CloudWatch",
-      "Performed functional validation for 50 APIs using Postman and enhanced testing with JUnit automation, boosting bug detection efficiency by 90%"
+      "Worked with 4 teams on a banking project; mentored 2 interns; ensured timely delivery using Agile/Scrum.",
+      "Developed 3 responsive portals using Spring MVC, ReactJS, HTML, and CSS for dynamic UIs.",
+      "Built REST APIs with Java 21, Spring Boot, Hibernate; integrated SQL and MongoDB.",
+      "Managed 8 microservices with Git/Bitbucket; used Kafka, Docker, and Kubernetes for deployment.",
+      "Set up Tomcat, Jenkins (6 projects), AWS Lambda, S3, CloudWatch, and Grafana for CI/CD and monitoring.",
+      "Validated 50+ APIs via Postman and JUnit, improving bug detection by 90%."
     ],
     "current": true
   },
   {
     "title": "Software Engineer",
     "company": "Quinbay",
-    "location": "",
-    "period": "Jan 2022 - July 2023",
+    "location": "India",
+    "period": "Jan 2022 - Aug 2023",
     "description": [
-      "Worked on scalable web pages for warehouse management based on Figma specifications using ReactJS, implementing backend microservice changes with Spring Boot, adhering to Agile/SDLC methodologies for requirement analysis, development, testing, and release cycles.",
-      "Spearheaded the migration of Stockholm’s inbound frontend codebase from AngularJS to Vue.js, delivering a complete overhaul that improved functionality and performance.",
-      "Integrated Tailwind and Bootstrap 3 CSS frameworks to develop responsive, visually appealing web pages, while building reusable CSS utility components using Blibli’s internal libraries.",
-      "Authored comprehensive unit tests using Jest, which ensured code quality and boosted code reliability and maintainability. Wrote integration test cases with Playwright, enhancing end-to-end testing coverage and minimizing production bugs.",
-      "Optimized code quality by reducing application error rates from 2.5% to 0.5% through continuous refinement and proactive issue resolution.",
-      "Facilitated code reviews and mentored new UI interns, fostering adherence to best practices and ensuring high-quality deliverables.",
-      "Demonstrated a Proof of Concept (POC) for warehouse layouts using the fabricJS library, showcasing innovative approaches to warehouse design.",
-      "Conducted Root Cause Analysis (RCA) for various critical issues, achieving an average resolution time of approximately 2 hours and demonstrating strong proactive problem-solving skills.",
-      "Significantly improved code quality, reducing application error rates from 2.5% to 0.5% through continuous refinement.",
-      "Conducted thorough code reviews and mentored new interns to foster adherence to best practices."
+      "Built 15+ scalable warehouse pages with ReactJS/Spring Boot using Agile and Jenkins to speed delivery.",
+      "Migrated 35+ components from AngularJS to Vue.js, improving load time by 40% and cutting maintenance 25%.",
+      "Created responsive UIs with Tailwind/Bootstrap and 20+ reusable components for UI consistency.",
+      "Wrote unit tests with Jest/RTL, reducing defects by 35% and speeding feedback via CI integration.",
+      "Built REST APIs for inventory and shipment tracking, improving data consistency and API speed by 35%.",
+      "Used Playwright for integration tests, reaching 96% coverage and minimizing prod bugs.",
+      "Cut error rates from 2.5% to 0.5% through code optimization and proactive fixes.",
+      "Led code reviews, mentored UI interns, and promoted best practices for high-quality delivery.",
+      "Built POC with fabricJS for dynamic layouts, reducing item search time by 50%."
     ]
   },
   {
-    "title": "Software Developer Intern",
+    "title": "Software Developer",
     "company": "APSSDC",
-    "location": "",
-    "period": "June 2021 - Aug 2021",
+    "location": "India",
+    "period": "June 2021 - Jan 2022",
     "description": [
-      "Gained proficiency in the Django framework, focusing on the integration between frontend and backend applications.",
-      "Developed a secure online voting application using the Django framework, allowing users to vote for specific candidates. Utilized MySQL for efficient data storage and management, ensuring a seamless user experience."
+      "Built 3 full-stack apps with Django, integrating frontend and backend seamlessly.",
+      "Created a secure voting system with authentication, vote validation, and fraud prevention.",
+      "Designed a 5-table MySQL schema, boosting query speed by 30% and ensuring data integrity.",
+      "Implemented role-based auth with session timeouts in Django to enhance security."
     ]
   }
 ]
