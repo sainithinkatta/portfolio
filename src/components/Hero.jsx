@@ -5,7 +5,7 @@ import profile from "../assets/sainithin.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8">
+    <section id="home" className="min-h-screen flex flex-col justify-center pt-10 pb-8">
       <div className="container mx-auto px-4 sm:px-6 mt-20">
         <div className="flex flex-col items-center text-center">
           <div className="md:mt-0 w-28 h-28 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 mb-8 animate-float overflow-hidden">
