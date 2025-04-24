@@ -6,9 +6,9 @@
     "period": "Jan 2024 - Present",
     "description": [
       "Worked with 4 teams on a banking project; mentored 2 interns; ensured timely delivery using Agile/Scrum.",
-      "Developed 3 responsive portals using Spring MVC, ReactJS, HTML, and CSS for dynamic UIs.",
+      "Developed 3 responsive portals using Spring MVC, ReactJS, HTML and CSS for dynamic UIs.",
       "Built REST APIs with Java 21, Spring Boot, Hibernate; integrated SQL and MongoDB.",
-      "Managed 8 microservices with Git/Bitbucket; used Kafka, Docker, and Kubernetes for deployment.",
+      "Managed 8 microservices with Bitbucket; used Kafka, Docker, and Kubernetes for deployment.",
       "Set up Tomcat, Jenkins (6 projects), AWS Lambda, S3, CloudWatch, and Grafana for CI/CD and monitoring.",
       "Validated 50+ APIs via Postman and JUnit, improving bug detection by 90%."
     ],
@@ -23,7 +23,7 @@
       "Built 15+ scalable warehouse pages with ReactJS/Spring Boot using Agile and Jenkins to speed delivery.",
       "Migrated 35+ components from AngularJS to Vue.js, improving load time by 40% and cutting maintenance 25%.",
       "Created responsive UIs with Tailwind/Bootstrap and 20+ reusable components for UI consistency.",
-      "Wrote unit tests with Jest/RTL, reducing defects by 35% and speeding feedback via CI integration.",
+      "Wrote unit tests with Jest, reducing defects by 35% and speeding feedback via CI integration.",
       "Built REST APIs for inventory and shipment tracking, improving data consistency and API speed by 35%.",
       "Used Playwright for integration tests, reaching 96% coverage and minimizing prod bugs.",
       "Cut error rates from 2.5% to 0.5% through code optimization and proactive fixes.",
