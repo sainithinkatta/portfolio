@@ -1,12 +1,28 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const [isDark, setIsDark] = React.useState(() => localStorage.getItem('theme') === 'dark');
+
+  React.useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const toggleTheme = () => {
+    setIsDark(prev => !prev);
   };
 
   const scrollToSection = (id) => {
@@ -28,15 +44,17 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 py-4">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
+        {/* Desktop Header */}
+        <div className="hidden md:flex justify-between items-center">
+          {/* Logo */}
+          <div>
             <a className="text-xl font-bold text-primary" href="/portfolio/">
               SN
             </a>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          
+          {/* Navigation Links */}
+          <nav className="flex items-center space-x-8">
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -47,19 +65,46 @@ const Header = () => {
               </button>
             ))}
           </nav>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 rounded-md text-foreground"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          
+          {/* Dark Mode Toggle */}
+          <div>
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-md text-foreground hover:text-primary transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? <MdLightMode size={24} /> : <MdDarkMode size={24} />}
+            </button>
+          </div>
+        </div>
+        
+        {/* Mobile Header */}
+        <div className="md:hidden flex justify-between items-center">
+          <a className="text-xl font-bold text-primary" href="/portfolio/">
+            SN
+          </a>
+          <div className="flex items-center">
+            {/* Dark Mode Toggle for Mobile */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-md text-foreground hover:text-primary transition-colors mr-2"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? <MdLightMode size={24} /> : <MdDarkMode size={24} />}
+            </button>
+            {/* Mobile Menu Toggle */}
+            <button
+              className="p-2 rounded-md text-foreground"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Navigation - Fixed positioning with proper z-index */}
+      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="fixed inset-x-0 top-16 z-40 bg-background md:hidden">
           <nav className="flex flex-col items-center space-y-6 py-8 px-4">
