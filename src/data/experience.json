@@ -10,7 +10,7 @@
       "Built REST APIs with Java 21, Spring Boot, Hibernate; integrated SQL and MongoDB.",
       "Managed 8 microservices with Bitbucket; used Kafka, Docker, and Kubernetes for deployment.",
       "Set up Tomcat, Jenkins (6 projects), AWS Lambda, S3, CloudWatch, and Grafana for CI/CD and monitoring.",
-      "Validated 50+ APIs via Postman and JUnit, improving bug detection by 90%."
+      "Validated 30+ APIs via Postman and JUnit, improving bug detection by 90%."
     ],
     "current": true
   },
