@@ -13,7 +13,7 @@
         "Responsive design using TailwindCSS",
         "Fast, responsive UI with React"
       ]
-    },
+    },  
     {
       "title": "CommerceNest",
       "description": "Developed a full-stack eCommerce application using Vue, Express.js, and MongoDB.",
@@ -41,20 +41,6 @@
         "Threat Intelligence for real-time monitoring",
         "Vulnerability Risk Assessment and incident response",
         "Crisis Management tools for effective decision-making"
-      ]
-    },
-    {
-      "title": "Online Voting System",
-      "description": "Developed a full-stack online voting web application using Django.",
-      "image": "https://via.placeholder.com/500",
-      "tags": ["Django", "Python", "Javascript","SQL"],
-      "repoUrl": "https://github.com/sainithinkatta/Online-Voting-Web-Application-using-Django",
-      "detailedDescription": "An online voting system using Django, allowing users to securely cast votes and administrators to manage election data.",
-      "features": [
-        "User authentication for secure voting",
-        "Real-time vote tallying and results",
-        "Admin interface for managing elections",
-        "Vote validation and security measures"
       ]
     }
   ]  
