@@ -4,11 +4,22 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const [isDark, setIsDark] = React.useState(() => localStorage.getItem('theme') === 'dark');
+  const [isDark, setIsDark] = React.useState(false); // Use boolean
 
   const GITHUB_URL = "https://github.com/sainithinkatta";
   const LINKEDIN_URL = "https://www.linkedin.com/in/sainithinkatta/";
 
+  // On mount, check localStorage for theme
+  React.useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setIsDark(true);
+    } else {
+      setIsDark(false);
+    }
+  }, []);
+
+  // Update dark class and localStorage when isDark changes
   React.useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add('dark');
