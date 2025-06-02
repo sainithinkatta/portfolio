@@ -71,8 +71,8 @@ const Hero = () => {
           className="text-primary animate-bounce cursor-pointer"
           size={36}
           onClick={() => {
-            const certificationsSection = document.getElementById('certifications');
-            if (certificationsSection) certificationsSection.scrollIntoView({ behavior: 'smooth' });
+            const experienceSection = document.getElementById('experience');
+            if (experienceSection) experienceSection.scrollIntoView({ behavior: 'smooth' });
           }}
         />
       </div>
