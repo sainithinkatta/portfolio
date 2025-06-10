@@ -11,12 +11,15 @@ import onlineVoting from "../assets/projects/online_voting.png";
 import realTimeThreatAnalysis from "../assets/projects/real_time_threat_ananalysis.png";
 import notesApp from "../assets/projects/notes_app.png";
 import commerceNest from "../assets/projects/commerce-nest.png";
+import personalFinanceTracker from "../assets/projects/personal-finance-tracker.png";
+
 
 const projectImages = {
   "Online Voting System": onlineVoting,
   "Real Time Threat Intelligence": realTimeThreatAnalysis,
   "NoteMate": notesApp,
-  "CommerceNest": commerceNest
+  "CommerceNest": commerceNest,
+  "Personal Finance Tracker": personalFinanceTracker
 };
 
 const Projects = () => {

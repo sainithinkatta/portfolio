@@ -1,5 +1,22 @@
 [
-    {
+  {
+    "title": "Personal Finance Tracker",
+    "description": "A responsive web application to help you track bank accounts, budgets, and expenses—built with React, TypeScript, Vite and Supabase.",
+    "image": "https://via.placeholder.com/500",
+    "tags": ["React", "TypeScript", "Vite", "Supabase", "TailwindCSS", "shadcn/ui"],
+    "liveUrl": "https://personal-finance-tracker-eosin-eight.vercel.app/",
+    "repoUrl": "https://github.com/sainithinkatta/personal-finance-tracker",
+    "detailedDescription": "Personal Finance Tracker is a real-time finance management app built with React, TypeScript, Vite, and Supabase. It provides an intuitive dashboard for connecting bank accounts, creating and allocating budgets, logging expenses, and visualizing spending trends—all synced live via Supabase.",
+    "features": [
+      "Sign up, log in, and session management via Supabase Auth",
+      "Add, list, edit, and remove multiple bank accounts",
+      "Create budgets by category and track allocation progress",
+      "Log daily expenses and view spending trends",
+      "Real-time data syncing with Supabase (PostgreSQL + Auth)",
+      "Mobile-first responsive UI using Tailwind CSS and shadcn/ui"
+    ]
+  },
+  {
       "title": "NoteMate",
       "description": "NoteMate is a MERN stack app for secure notes with JWT authentication.",
       "image": "https://via.placeholder.com/500",
