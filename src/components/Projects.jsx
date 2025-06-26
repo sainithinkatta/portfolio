@@ -12,6 +12,7 @@ import realTimeThreatAnalysis from "../assets/projects/real_time_threat_ananalys
 import notesApp from "../assets/projects/notes_app.png";
 import commerceNest from "../assets/projects/commerce-nest.png";
 import personalFinanceTracker from "../assets/projects/personal-finance-tracker.png";
+import videoObjectTracking from "../assets/projects/video_tracking.png";
 
 
 const projectImages = {
@@ -19,7 +20,8 @@ const projectImages = {
   "Real Time Threat Intelligence": realTimeThreatAnalysis,
   "NoteMate": notesApp,
   "CommerceNest": commerceNest,
-  "Personal Finance Tracker": personalFinanceTracker
+  "Personal Finance Tracker": personalFinanceTracker,
+  "Video Object Tracking": videoObjectTracking
 };
 
 const Projects = () => {
