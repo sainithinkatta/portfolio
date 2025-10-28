@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex justify-center w-full mb-4 md:mb-0">
             <p className="text-center text-sm text-muted-foreground">
-              &copy; Designed and Built by Sai Nithin.
+              &copy;2025 Designed and Built by Sai Nithin.
             </p>
           </div>
           

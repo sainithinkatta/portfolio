@@ -1,46 +1,54 @@
 [
   {
-    "title": "Full Stack Developer",
+    "title": "Software Engineer",
     "company": "Assurant",
     "location": "USA",
-    "period": "Jan 2024 - Jun 2025",
+    "period": "Aug 2024 - Present",
     "description": [
-      "Worked with 4 teams on a banking project; mentored 2 interns; ensured timely delivery using Agile/Scrum.",
-      "Developed 3 responsive portals using Spring MVC, ReactJS, HTML and CSS for dynamic UIs.",
-      "Built REST APIs with Java 21, Spring Boot, Hibernate; integrated SQL and MongoDB.",
-      "Managed 8 microservices with Bitbucket; used Kafka, Docker, and Kubernetes for deployment.",
-      "Set up Tomcat, Jenkins (6 projects), AWS Lambda, S3, CloudWatch, and Grafana for CI/CD and monitoring.",
-      "Validated 30+ APIs via Postman and JUnit, improving bug detection by 90%."
+      "Collaborated with four cross-functional teams on a major banking initiative, mentoring two interns and driving timely feature delivery through Agile and Scrum practices.",
+      "Built and launched three responsive web portals using Spring MVC and ReactJS, delivering dynamic user experiences that improved customer engagement metrics.",
+      "Developed RESTful APIs with Java 21 and Spring Boot, integrating Hibernate with SQL and MongoDB databases for high-performance real-time data operations.",
+      "Maintained eight microservice codebases using Git and Bitbucket, integrating Apache Kafka for asynchronous event streaming to enhance system reliability.",
+      "Configured Tomcat servers and automated deployments via Jenkins CI/CD pipelines, reducing release time by 25% across six projects.",
+      "Validated over thirty APIs through Postman and strengthened automated testing with JUnit, improving bug detection efficiency by 95%."
     ],
     "current": true
   },
   {
+    "title": "Full Stack Developer",
+    "company": "UMKC",
+    "location": "MO, USA",
+    "period": "Jan 2024 - Jul 2024",
+    "description": [
+      "Developed and maintained full-stack web applications that automated student request workflows for UMKC departments, reducing processing time by 30%.",
+      "Built modular React and Node.js components with SQL backends, improving data accuracy by 25% and enhancing the reliability of internal systems.",
+      "Implemented CI/CD automation and Docker-based containerization, cutting deployment times from hours to minutes.",
+      "Partnered with cross-functional teams to design analytics dashboards that delivered real-time insights into departmental performance, boosting data-driven decision-making by 40%."
+    ]
+  },
+  {
     "title": "Software Engineer",
     "company": "Quinbay",
-    "location": "India",
+    "location": "Bangalore, India",
     "period": "Jan 2022 - Aug 2023",
     "description": [
-      "Built 15+ scalable warehouse pages with ReactJS/Spring Boot using Agile and Jenkins to speed delivery.",
-      "Migrated 35+ components from AngularJS to Vue.js, improving load time by 40% and cutting maintenance 25%.",
-      "Created responsive UIs with Tailwind/Bootstrap and 20+ reusable components for UI consistency.",
-      "Wrote unit tests with Jest, reducing defects by 35% and speeding feedback via CI integration.",
-      "Built REST APIs for inventory and shipment tracking, improving data consistency and API speed by 35%.",
-      "Used Playwright for integration tests, reaching 96% coverage and minimizing prod bugs.",
-      "Cut error rates from 2.5% to 0.5% through code optimization and proactive fixes.",
-      "Led code reviews, mentored UI interns, and promoted best practices for high-quality delivery.",
-      "Built POC with fabricJS for dynamic layouts, reducing item search time by 50%."
+      "Delivered over 15 scalable warehouse management web pages using ReactJS and Spring Boot, accelerating development cycles by 30% through effective Agile collaboration and Jenkins automation.",
+      "Migrated more than 35 legacy AngularJS components to Vue.js, enhancing load times by 40% while cutting maintenance overhead by 25%, resulting in a seamless user experience.",
+      "Developed reusable UI components using Tailwind CSS and Bootstrap to ensure design consistency while reducing feature delivery timelines by an average of two weeks across multiple projects.",
+      "Created RESTful APIs for inventory and stock management systems that improved response times by 35% while ensuring real-time data accuracy for efficient warehouse operations.",
+      "Enhanced CI/CD pipelines by integrating automated build validation and static code analysis tools, increasing deployment reliability and reducing rollback incidents during production releases."
     ]
   },
   {
     "title": "Software Developer",
-    "company": "APSSDC",
-    "location": "India",
-    "period": "June 2021 - Jan 2022",
+    "company": "Aktrix Technologies",
+    "location": "Hyderabad, India",
+    "period": "Apr 2020 - Dec 2021",
     "description": [
-      "Built 3 full-stack apps with Django, integrating frontend and backend seamlessly.",
-      "Created a secure voting system with authentication, vote validation, and fraud prevention.",
-      "Designed a 5-table MySQL schema, boosting query speed by 30% and ensuring data integrity.",
-      "Implemented role-based auth with session timeouts in Django to enhance security."
+      "Developed and maintained dynamic web applications using AngularJS and Spring Boot, achieving a 25% improvement in application load times through effective debugging and performance enhancements.",
+      "Built reusable UI components with AngularJS and Bootstrap that streamlined design consistency across multiple projects while reducing front-end development time by 30% through efficient coding practices.",
+      "Collaborated with senior engineers to integrate RESTful APIs, enhancing deployment reliability by 40% through the implementation of Jenkins CI/CD pipelines and Docker containerization.",
+      "Actively participated in Agile sprints and code reviews to foster a collaborative team environment while improving software delivery speed by 20% through iterative feedback loops."
     ]
   }
 ]
