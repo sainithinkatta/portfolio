@@ -15,5 +15,5 @@ export default defineConfig(() => ({
       "@": path.resolve(new URL(".", import.meta.url).pathname, "./src"),
     },
   },
-  base: '/portfolio/'
+  base: '/'
 }));
