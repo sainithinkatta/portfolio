@@ -1,6 +1,6 @@
 const certificationsData = [
   {
-    title: "React - The Complete Guide 2025 (incl. Next.js, Redux)",
+    title: "React - The Complete Guide (incl. Next.js, Redux)",
     issuer: "Udemy",
     date: "April 22 2025",
     skills: ["React", "Next.js", "Redux"],

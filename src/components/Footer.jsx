@@ -1,4 +1,4 @@
-import { ArrowUp } from 'lucide-react';
+import { Heart, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -6,24 +6,23 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-secondary py-8">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex justify-center w-full mb-4 md:mb-0">
-            <p className="text-center text-sm text-muted-foreground">
-              &copy;2025 Designed and Built by Sai Nithin.
-            </p>
-          </div>
-          
-          <div className="flex items-center">
-            <button
-              onClick={scrollToTop}
-              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-              aria-label="Scroll to top"
-            >
-              <ArrowUp size={20} />
-            </button>
-          </div>
+    <footer className="relative bg-gradient-to-b from-background to-purple-50/30 dark:to-purple-950/10 border-t border-border">
+      <div className="container mx-auto px-6 lg:px-8 py-12">
+        {/* Bottom Bar */}
+        <div className="relative flex items-center justify-center">
+         <p className="text-sm text-muted-foreground text-center">
+            &copy; {new Date().getFullYear()} Sai Nithin. All rights reserved.
+          </p>
+
+          {/* Scroll to Top */}
+          <button
+            onClick={scrollToTop}
+            className="group absolute right-0 flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            aria-label="Scroll to top"
+          >
+            <span className="text-sm font-medium">Back to Top</span>
+            <ArrowUp className="h-4 w-4 group-hover:-translate-y-1 transition-transform" />
+          </button>
         </div>
       </div>
     </footer>

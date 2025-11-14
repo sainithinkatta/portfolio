@@ -1,16 +1,13 @@
 import { useRef } from "react";
-import { Send, Github, Linkedin } from 'lucide-react';
+import { Send, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Card, CardContent } from '@/components/ui/card';
 
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
-  const GITHUB_URL = "https://github.com/sainithinkatta"
-  const LINKEDIN_URL = "https://www.linkedin.com/in/sai-nithin-katta-1401001b7";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,10 +15,10 @@ const Contact = () => {
     // Send email using EmailJS
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID, // EmailJS service ID
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // EmailJS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -35,108 +32,136 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get in <span className="text-primary">Touch</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to discuss opportunities? Feel free to reach out to me through any of the channels below.
-          </p>
-        </div>
-        
-        {/* Centered Contact Form */}
-        <div className="max-w-md mx-auto">
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-center text-xl font-semibold mb-6">Send Me a Message</h3>
-              
-              <form 
-                ref={formRef} 
-                onSubmit={handleSubmit} 
-                className="space-y-4"
-              >
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-1">
-                    Your Name
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name here"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-1">
-                    Email Address
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="Enter your email here"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-1">
-                    Subject
-                  </label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    placeholder="Project Inquiry"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-1">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me about your project or inquiry..."
-                    rows={5}
-                    required
-                  />
-                </div>
-                
-                <Button type="submit" className="w-full" >
-                  <span className="flex items-center">
-                    Send Message
-                    <Send size={16} className="ml-2" />
-                  </span>
-                </Button>
-              </form>
+    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-purple-50/30 to-background dark:from-purple-950/10 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 dark:bg-blue-900/10 rounded-full filter blur-3xl opacity-30"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 dark:bg-purple-900/10 rounded-full filter blur-3xl opacity-30"></div>
 
-              <div className="mt-8 text-center">
-                <p className="font-medium mb-3">Connect with me</p>
-                <div className="flex justify-center space-x-4">
-                  <a 
-                    href={LINKEDIN_URL} 
-                    target="_blank"
-                    className="p-2 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <Linkedin size={20} />
-                  </a>
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="max-w-5xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16 space-y-4 animate-fade-in-up">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-foreground">
+              Let's Work Together
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+            </p>
+          </div>
 
-                  <a 
-                    href={GITHUB_URL} 
-                    target="_blank"
-                    className="p-2 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                  >
-                    <Github size={20} />
-                  </a>
+          <div className="grid lg:grid-cols-5 gap-12">
+            {/* Contact Info */}
+            <div className="lg:col-span-2 space-y-8 animate-fade-in-up delay-200">
+              <div>
+                <h3 className="text-2xl font-serif font-bold mb-6">Get In Touch</h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  I'm open to new opportunities and always happy to connect. Have a question or just want to chat? Drop me a message and I'll get back to you promptly!
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white flex-shrink-0">
+                    <Mail className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Email</h4>
+                    <a
+                      href="mailto:sainithinkatta09@gmail.com"
+                      className="text-muted-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      sainithinkatta09@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 text-white flex-shrink-0">
+                    <MapPin className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Location</h4>
+                    <p className="text-muted-foreground">USA</p>
+                  </div>
                 </div>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+
+            {/* Contact Form */}
+            <div className="lg:col-span-3 animate-fade-in-up delay-400">
+              <div className="rounded-2xl bg-card border border-border p-8 shadow-xl">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid sm:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-semibold mb-2">
+                        Your Name
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                        className="rounded-xl"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-semibold mb-2">
+                        Email Address
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                        className="rounded-xl"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-semibold mb-2">
+                      Subject
+                    </label>
+                    <Input
+                      id="subject"
+                      name="subject"
+                      placeholder="Project Inquiry"
+                      required
+                      className="rounded-xl"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-semibold mb-2">
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="Tell me about your project or inquiry..."
+                      rows={6}
+                      required
+                      className="rounded-xl resize-none"
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    <span className="flex items-center justify-center gap-2">
+                      Send Message
+                      <Send className="h-5 w-5" />
+                    </span>
+                  </Button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
