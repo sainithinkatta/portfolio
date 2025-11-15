@@ -70,7 +70,7 @@ const MailIcon = (props) => (
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="block text-foreground"
                 >
-                  Hi, I'm Sai Nithin
+                  Hi, <span className="whitespace-nowrap">I'm  Sai Nithin</span>
                 </motion.span>
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
