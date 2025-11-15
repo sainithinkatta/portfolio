@@ -80,7 +80,7 @@ const MailIcon = (props) => (
                 >
                   <TypewriterText
                     texts={roles}
-                    className="text-[2.95rem] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent"
+                    className="text-2xl sm:text-4xl lg:text-[2.95rem] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent whitespace-nowrap"
                   />
                 </motion.span>
               </h1>
@@ -89,9 +89,9 @@ const MailIcon = (props) => (
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
+                className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed lg:whitespace-nowrap"
               >
-                I’m a Software Developer with experience in delivering scalable, high-performance full-stack applications.
+                Building scalable, high-performance applications with modern web technologies.
               </motion.p>
             </motion.div>
 
