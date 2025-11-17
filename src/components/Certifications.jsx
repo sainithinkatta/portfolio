@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import TiltCard from '@/components/animations/TiltCard';
+import GeometricConstellation from '@/components/animations/GeometricConstellation';
 import certificationsData from '@/data/certificationsData';
 
 const Certifications = () => {
@@ -18,6 +19,9 @@ const Certifications = () => {
       animate={isInView ? "visible" : "hidden"}
       className="py-20 lg:py-32 bg-gradient-to-b from-background to-orange-50/20 dark:to-orange-950/10 relative overflow-hidden"
     >
+      {/* Geometric Constellation Background */}
+      <GeometricConstellation />
+
       {/* Animated Background Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div

@@ -3,6 +3,8 @@ import { Send, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { motion } from 'framer-motion';
+import GeometricConstellation from '@/components/animations/GeometricConstellation';
 
 import emailjs from "@emailjs/browser";
 
@@ -33,9 +35,51 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-purple-50/30 to-background dark:from-purple-950/10 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 dark:bg-blue-900/10 rounded-full filter blur-3xl opacity-30"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 dark:bg-purple-900/10 rounded-full filter blur-3xl opacity-30"></div>
+      {/* Geometric Constellation Background */}
+      <GeometricConstellation />
+
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute top-10 left-10 w-96 h-96 bg-purple-300/20 dark:bg-purple-600/10 rounded-full filter blur-3xl"
+          animate={{
+            scale: [1, 1.3, 1],
+            x: [0, 70, 0],
+            y: [0, 50, 0],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            repeatType: "reverse"
+          }}
+        />
+        <motion.div
+          className="absolute -bottom-20 -right-20 w-[500px] h-[500px] bg-blue-300/20 dark:bg-blue-600/10 rounded-full filter blur-3xl"
+          animate={{
+            scale: [1, 1.25, 1],
+            x: [0, -60, 0],
+            y: [0, -50, 0],
+          }}
+          transition={{
+            duration: 24,
+            repeat: Infinity,
+            repeatType: "reverse",
+            delay: 1.5
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 right-1/3 w-64 h-64 bg-pink-300/15 dark:bg-pink-600/8 rounded-full filter blur-3xl"
+          animate={{
+            scale: [1, 1.4, 1],
+            rotate: [0, 360, 0],
+          }}
+          transition={{
+            duration: 28,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+        />
+      </div>
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">

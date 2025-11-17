@@ -18,8 +18,7 @@ const Hero = () => {
   };
 
   const roles = [
-    'Full-Stack Developer',
-    'Backend Engineer',
+    'Software Developer',
     'Problem Solver',
     'Tech Enthusiast'
   ];
@@ -91,7 +90,7 @@ const MailIcon = (props) => (
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed lg:whitespace-nowrap"
               >
-                Building scalable, high-performance applications with modern web technologies.
+                Building scalable, high-performance applications with modern technologies.
               </motion.p>
             </motion.div>
 

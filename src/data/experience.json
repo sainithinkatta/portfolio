@@ -5,12 +5,12 @@
     "location": "USA",
     "period": "Aug 2024 - Present",
     "description": [
-      "Collaborated with four cross-functional teams on a major banking initiative, mentoring two interns and driving timely feature delivery through Agile and Scrum practices.",
-      "Built and launched three responsive web portals using Spring MVC and ReactJS, delivering dynamic user experiences that improved customer engagement metrics.",
-      "Developed RESTful APIs with Java 21 and Spring Boot, integrating Hibernate with SQL and MongoDB databases for high-performance real-time data operations.",
-      "Maintained eight microservice codebases using Git and Bitbucket, integrating Apache Kafka for asynchronous event streaming to enhance system reliability.",
-      "Configured Tomcat servers and automated deployments via Jenkins CI/CD pipelines, reducing release time by 25% across six projects.",
-      "Validated over thirty APIs through Postman and strengthened automated testing with JUnit, improving bug detection efficiency by 95%."
+      "Collaborate with 4 cross-functional teams on a major banking initiative, mentoring 2 interns and ensuring timely feature delivery through Agile and Scrum methodologies.",
+      "Build and deploy responsive web portals using Spring MVC and ReactJS, creating dynamic user interfaces that enhance customer engagement and satisfaction.",
+      "Develop RESTful APIs with Java 21 and Spring Boot, connecting Hibernate with SQL and MongoDB databases to enable fast, real-time data processing.",
+      "Maintain 8 microservice applications using Git and Bitbucket, implementing Apache Kafka for efficient event streaming to improve system reliability and performance.",
+      "Configure Tomcat servers and automate deployment processes through Jenkins CI/CD pipelines, reducing release time by 25% across 6 projects.",
+      "Test and validate over 30 APIs using Postman and strengthen code quality with JUnit automated testing, improving bug detection efficiency by 95%."
     ],
     "current": true
   },
@@ -20,10 +20,10 @@
     "location": "MO, USA",
     "period": "Jan 2024 - Jul 2024",
     "description": [
-      "Developed and maintained full-stack web applications that automated student request workflows for UMKC departments, reducing processing time by 30%.",
-      "Built modular React and Node.js components with SQL backends, improving data accuracy by 25% and enhancing the reliability of internal systems.",
-      "Implemented CI/CD automation and Docker-based containerization, cutting deployment times from hours to minutes.",
-      "Partnered with cross-functional teams to design analytics dashboards that delivered real-time insights into departmental performance, boosting data-driven decision-making by 40%."
+      "Developed full-stack web applications that automated student request workflows for UMKC departments, reducing manual processing time by 30%.",
+      "Built reusable React and Node.js components with SQL database integration, improving data accuracy by 25% and enhancing system reliability.",
+      "Implemented CI/CD automation and Docker containerization, reducing deployment time from hours to minutes and streamlining the release process.",
+      "Collaborated with cross-functional teams to design analytics dashboards that provided real-time performance insights, increasing data-driven decision-making by 40%."
     ]
   },
   {
@@ -32,11 +32,11 @@
     "location": "Bangalore, India",
     "period": "Jan 2022 - Aug 2023",
     "description": [
-      "Delivered over 15 scalable warehouse management web pages using ReactJS and Spring Boot, accelerating development cycles by 30% through effective Agile collaboration and Jenkins automation.",
-      "Migrated more than 35 legacy AngularJS components to Vue.js, enhancing load times by 40% while cutting maintenance overhead by 25%, resulting in a seamless user experience.",
-      "Developed reusable UI components using Tailwind CSS and Bootstrap to ensure design consistency while reducing feature delivery timelines by an average of two weeks across multiple projects.",
-      "Created RESTful APIs for inventory and stock management systems that improved response times by 35% while ensuring real-time data accuracy for efficient warehouse operations.",
-      "Enhanced CI/CD pipelines by integrating automated build validation and static code analysis tools, increasing deployment reliability and reducing rollback incidents during production releases."
+      "Delivered 15+ scalable warehouse management web pages using ReactJS and Spring Boot, accelerating development cycles by 30% through Agile practices and Jenkins automation.",
+      "Migrated 35+ legacy AngularJS components to Vue.js, improving page load times by 40% and reducing maintenance costs by 25% for a smoother user experience.",
+      "Developed reusable UI components with Tailwind CSS and Bootstrap to maintain design consistency and reduce feature delivery timelines by 2 weeks on average.",
+      "Created RESTful APIs for inventory and stock management systems, improving response times by 35% and ensuring accurate real-time data for warehouse operations.",
+      "Enhanced CI/CD pipelines by integrating automated testing and code analysis tools, increasing deployment reliability and reducing production rollback incidents."
     ]
   },
   {
@@ -45,10 +45,10 @@
     "location": "Hyderabad, India",
     "period": "Apr 2020 - Dec 2021",
     "description": [
-      "Developed and maintained dynamic web applications using AngularJS and Spring Boot, achieving a 25% improvement in application load times through effective debugging and performance enhancements.",
-      "Built reusable UI components with AngularJS and Bootstrap that streamlined design consistency across multiple projects while reducing front-end development time by 30% through efficient coding practices.",
-      "Collaborated with senior engineers to integrate RESTful APIs, enhancing deployment reliability by 40% through the implementation of Jenkins CI/CD pipelines and Docker containerization.",
-      "Actively participated in Agile sprints and code reviews to foster a collaborative team environment while improving software delivery speed by 20% through iterative feedback loops."
+      "Developed dynamic web applications using AngularJS and Spring Boot, improving application load times by 25% through performance optimization and debugging.",
+      "Built reusable UI components with AngularJS and Bootstrap, ensuring design consistency across projects and reducing front-end development time by 30%.",
+      "Worked with senior engineers to integrate RESTful APIs and implement Jenkins CI/CD pipelines with Docker, improving deployment reliability by 40%.",
+      "Participated in Agile sprints and code reviews, contributing to a collaborative team environment and increasing software delivery speed by 20% through continuous improvement."
     ]
   }
 ]

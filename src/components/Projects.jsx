@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import TiltCard from '@/components/animations/TiltCard';
 import MagneticButton from '@/components/animations/MagneticButton';
 import FloatingCode from '@/components/animations/FloatingCode';
+import GeometricConstellation from '@/components/animations/GeometricConstellation';
 
 import projects from '../data/projects';
 
@@ -54,13 +55,58 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="py-20 lg:py-32 bg-gradient-to-b from-background to-purple-50/30 dark:to-purple-950/10 relative overflow-hidden">
+        className="py-20 lg:py-32 bg-gradient-to-b from-background to-purple-50/20 dark:to-purple-950/10 relative overflow-hidden">
+        {/* Geometric Constellation Background */}
+        <GeometricConstellation />
+
         {/* Floating Code Background */}
         <FloatingCode />
 
-        {/* Background decoration */}
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-100 dark:bg-blue-900/10 rounded-full filter blur-3xl opacity-30"></div>
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-purple-100 dark:bg-purple-900/10 rounded-full filter blur-3xl opacity-30"></div>
+        {/* Animated Background Shapes */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <motion.div
+            className="absolute -top-40 right-20 w-80 h-80 bg-purple-300/20 dark:bg-purple-600/10 rounded-full filter blur-3xl"
+            animate={{
+              scale: [1, 1.4, 1],
+              x: [0, 60, 0],
+              y: [0, 40, 0],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: 22,
+              repeat: Infinity,
+              repeatType: "reverse"
+            }}
+          />
+          <motion.div
+            className="absolute top-1/3 -left-40 w-96 h-96 bg-blue-300/20 dark:bg-blue-600/10 rounded-full filter blur-3xl"
+            animate={{
+              scale: [1, 1.3, 1],
+              x: [0, -60, 0],
+              y: [0, -40, 0],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+              delay: 1
+            }}
+          />
+          <motion.div
+            className="absolute bottom-10 right-1/4 w-72 h-72 bg-pink-300/15 dark:bg-pink-600/8 rounded-full filter blur-3xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              x: [0, 40, 0],
+              y: [0, -30, 0],
+            }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              repeatType: "reverse",
+              delay: 2
+            }}
+          />
+        </div>
 
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-7xl mx-auto">
