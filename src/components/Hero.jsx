@@ -147,7 +147,7 @@ const MailIcon = (props) => (
               className="flex items-center justify-center gap-6"
             >
               {[
-                { icon: FaLinkedin, url: 'https://www.linkedin.com/in/sai-nithin-katta-1401001b7', color: 'text-blue-600 dark:text-blue-400' },
+                { icon: FaLinkedin, url: 'https://www.linkedin.com/in/sainithinreddy/', color: 'text-blue-600 dark:text-blue-400' },
                 { icon: FaGithub, url: 'https://github.com/sainithinkatta', color: 'text-gray-700 dark:text-gray-300' },
                 { icon: MailIcon, url: 'mailto:sainithinkatta09@gmail.com', color: 'text-purple-600 dark:text-purple-400' }
               ].map((social, index) => {
