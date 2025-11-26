@@ -51,7 +51,10 @@ const MailIcon = (props) => (
       {/* Floating Blobs */}
       <FloatingBlobs />
 
-      <MouseParallax strength={15} className="container mx-auto px-6 lg:px-8 relative z-10 w-full">
+      <MouseParallax
+        strength={15}
+        className="container mx-auto px-6 lg:px-8 relative z-10 w-full pb-40 sm:pb-44 md:pb-32 lg:pb-24"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-8">
             {/* Main Heading with Animations */}
@@ -62,7 +65,7 @@ const MailIcon = (props) => (
               className="space-y-6"
             >
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold leading-tight tracking-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-serif font-bold leading-tight tracking-tight">
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -79,7 +82,7 @@ const MailIcon = (props) => (
                 >
                   <TypewriterText
                     texts={roles}
-                    className="text-2xl sm:text-4xl lg:text-[2.95rem] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent whitespace-nowrap"
+                    className="text-xl sm:text-3xl lg:text-[2.95rem] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent whitespace-nowrap"
                   />
                 </motion.span>
               </h1>
@@ -88,7 +91,7 @@ const MailIcon = (props) => (
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed lg:whitespace-nowrap"
+                className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed lg:whitespace-nowrap"
               >
                 Building scalable, high-performance applications with modern technologies.
               </motion.p>
@@ -104,7 +107,7 @@ const MailIcon = (props) => (
               <MagneticButton>
                 <Button
                   size="lg"
-                  onClick={() => scrollToSection('projects')}
+                  onClick={() => scrollToSection('experience')}
                   className="group px-8 py-6 text-lg font-semibold rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 relative overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center">
