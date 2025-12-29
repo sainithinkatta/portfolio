@@ -23,7 +23,7 @@
     ]
   },
   {
-    "title": "Personal Finance Tracker",
+    "title": "FinMate",
     "description": "A responsive web application to help you track bank accounts, budgets, and expenses—built with React, TypeScript, Vite and Supabase.",
     "image": "https://via.placeholder.com/500",
     "tags": [
@@ -34,9 +34,9 @@
       "TailwindCSS",
       "shadcn/ui"
     ],
-    "liveUrl": "https://personal-finance-tracker-eosin-eight.vercel.app/",
+    "liveUrl": "https://fin-mate-one.vercel.app/app",
     "repoUrl": "https://github.com/sainithinkatta/personal-finance-tracker",
-    "detailedDescription": "Personal Finance Tracker is a real-time finance management app built with React, TypeScript, Vite, and Supabase. It provides an intuitive dashboard for connecting bank accounts, creating and allocating budgets, logging expenses, and visualizing spending trends—all synced live via Supabase.",
+    "detailedDescription": "FinMate is a real-time finance management app built with React, TypeScript, Vite, and Supabase. It provides an intuitive dashboard for connecting bank accounts, creating and allocating budgets, logging expenses, and visualizing spending trends—all synced live via Supabase.",
     "features": [
       "Sign up, log in, and session management via Supabase Auth",
       "Add, list, edit, and remove multiple bank accounts",
