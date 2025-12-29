@@ -22,7 +22,7 @@ const projectImages = {
   "Real Time Threat Intelligence": realTimeThreatAnalysis,
   "NoteMate": notesApp,
   "CommerceNest": commerceNest,
-  "Personal Finance Tracker": personalFinanceTracker,
+  "FinMate": personalFinanceTracker,
   "Video Object Tracking": videoObjectTracking
 };
 
