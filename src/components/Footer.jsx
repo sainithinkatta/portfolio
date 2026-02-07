@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Copyright - Centered */}
           <div className="flex items-center justify-center">
             <p className="text-sm text-muted-foreground text-center">
-              &copy; 2025 Sai Nithin. All rights reserved.
+              &copy; {new Date().getFullYear()} Sai Nithin. All rights reserved.
             </p>
           </div>
         </div>
