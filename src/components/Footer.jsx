@@ -1,48 +1,32 @@
-import { Heart, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // Show button when page is scrolled down
   useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    const onScroll = () => setIsVisible(window.pageYOffset > 400);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
     <>
-      {/* Sticky Floating Back to Top Button */}
       {isVisible && (
         <button
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl hover:shadow-purple-500/50"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-11 h-11 rounded-full bg-foreground text-background shadow-md hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           aria-label="Scroll to top"
         >
-          <ArrowUp className="h-5 w-5 md:h-6 md:w-6" />
+          <ArrowUp className="h-4 w-4" />
         </button>
       )}
 
-      <footer className="relative bg-gradient-to-b from-background to-purple-50/30 dark:to-purple-950/10 border-t border-border">
-        <div className="container mx-auto px-6 lg:px-8 py-12">
-          {/* Copyright - Centered */}
-          <div className="flex items-center justify-center">
-            <p className="text-sm text-muted-foreground text-center">
-              &copy; {new Date().getFullYear()} Sai Nithin. All rights reserved.
-            </p>
-          </div>
+      <footer className="border-t border-border">
+        <div className="mx-auto max-w-[1200px] px-6 py-10 flex items-center justify-center">
+          <p className="text-caption text-muted-foreground">
+            &copy; {new Date().getFullYear()} Sai Nithin.
+          </p>
         </div>
       </footer>
     </>

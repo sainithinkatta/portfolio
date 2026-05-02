@@ -1,20 +1,18 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Send, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { motion } from 'framer-motion';
-import GeometricConstellation from '@/components/animations/GeometricConstellation';
-
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
+  const [status, setStatus] = useState('idle');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Send email using EmailJS
+    setStatus('sending');
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -24,188 +22,135 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("Message sent successfully!");
+          setStatus('sent');
           formRef.current.reset();
+          setTimeout(() => setStatus('idle'), 4000);
         },
         () => {
-          alert("Failed to send message. Please try again.");
+          setStatus('error');
+          setTimeout(() => setStatus('idle'), 4000);
         }
       );
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-purple-50/30 to-background dark:from-purple-950/10 relative overflow-hidden">
-      {/* Geometric Constellation Background */}
-      <GeometricConstellation />
-
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <section id="contact" className="py-32 lg:py-48 border-t border-border">
+      <div className="mx-auto max-w-[1200px] px-6">
         <motion.div
-          className="absolute top-10 left-10 w-96 h-96 bg-purple-300/20 dark:bg-purple-600/10 rounded-full filter blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            x: [0, 70, 0],
-            y: [0, 50, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            repeatType: "reverse"
-          }}
-        />
-        <motion.div
-          className="absolute -bottom-20 -right-20 w-[500px] h-[500px] bg-blue-300/20 dark:bg-blue-600/10 rounded-full filter blur-3xl"
-          animate={{
-            scale: [1, 1.25, 1],
-            x: [0, -60, 0],
-            y: [0, -50, 0],
-          }}
-          transition={{
-            duration: 24,
-            repeat: Infinity,
-            repeatType: "reverse",
-            delay: 1.5
-          }}
-        />
-        <motion.div
-          className="absolute top-1/2 right-1/3 w-64 h-64 bg-pink-300/15 dark:bg-pink-600/8 rounded-full filter blur-3xl"
-          animate={{
-            scale: [1, 1.4, 1],
-            rotate: [0, 360, 0],
-          }}
-          transition={{
-            duration: 28,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        />
-      </div>
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-3xl mb-20"
+        >
+          <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+            Contact
+          </p>
+          <h2 className="text-headline text-foreground text-balance">
+            Let's work together.
+          </h2>
+          <p className="mt-5 text-body text-muted-foreground max-w-2xl">
+            Have a project in mind, or want to discuss opportunities? I'd love to hear from you.
+          </p>
+        </motion.div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="max-w-5xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16 space-y-4 animate-fade-in-up">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-foreground">
-              Let's Work Together
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind or want to discuss opportunities? I'd love to hear from you.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-5 gap-12">
-            {/* Contact Info */}
-            <div className="lg:col-span-2 space-y-8 animate-fade-in-up delay-200">
-              <div>
-                <h3 className="text-2xl font-serif font-bold mb-6">Get In Touch</h3>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  I'm open to new opportunities and always happy to connect. Have a question or just want to chat? Drop me a message and I'll get back to you promptly!
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white flex-shrink-0">
-                    <Mail className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
-                    <a
-                      href="mailto:sainithinkatta09@gmail.com"
-                      className="text-muted-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                    >
-                      sainithinkatta09@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 text-white flex-shrink-0">
-                    <MapPin className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Location</h4>
-                    <p className="text-muted-foreground">USA</p>
-                  </div>
-                </div>
-              </div>
+        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-2 space-y-8"
+          >
+            <div>
+              <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-3">
+                Email
+              </p>
+              <a
+                href="mailto:sainithinkatta09@gmail.com"
+                className="inline-flex items-center gap-2 text-body text-foreground hover:text-accent transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                sainithinkatta09@gmail.com
+              </a>
             </div>
 
-            {/* Contact Form */}
-            <div className="lg:col-span-3 animate-fade-in-up delay-400">
-              <div className="rounded-2xl bg-card border border-border p-8 shadow-xl">
-                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold mb-2">
-                        Your Name
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        required
-                        className="rounded-xl"
-                      />
-                    </div>
+            <div>
+              <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-3">
+                Location
+              </p>
+              <p className="inline-flex items-center gap-2 text-body text-foreground">
+                <MapPin className="h-4 w-4" />
+                USA
+              </p>
+            </div>
+          </motion.div>
 
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold mb-2">
-                        Email Address
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Enter your email"
-                        required
-                        className="rounded-xl"
-                      />
-                    </div>
-                  </div>
-
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-3"
+          >
+            <div className="rounded-lg bg-surface p-8 sm:p-10">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold mb-2">
-                      Subject
+                    <label htmlFor="name" className="block text-caption font-medium text-foreground mb-2">
+                      Name
                     </label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      placeholder="Project Inquiry"
-                      required
-                      className="rounded-xl"
-                    />
+                    <Input id="name" name="name" placeholder="Your name" required />
                   </div>
-
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold mb-2">
-                      Message
+                    <label htmlFor="email" className="block text-caption font-medium text-foreground mb-2">
+                      Email
                     </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Tell me about your project or inquiry..."
-                      rows={6}
-                      required
-                      className="rounded-xl resize-none"
-                    />
+                    <Input id="email" name="email" type="email" placeholder="you@example.com" required />
                   </div>
+                </div>
 
-                  <Button
-                    type="submit"
-                    size="lg"
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    <span className="flex items-center justify-center gap-2">
-                      Send Message
-                      <Send className="h-5 w-5" />
-                    </span>
+                <div>
+                  <label htmlFor="subject" className="block text-caption font-medium text-foreground mb-2">
+                    Subject
+                  </label>
+                  <Input id="subject" name="subject" placeholder="Project inquiry" required />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-caption font-medium text-foreground mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell me about your project."
+                    rows={6}
+                    required
+                    className="resize-none"
+                  />
+                </div>
+
+                <div className="flex items-center gap-4 pt-2">
+                  <Button type="submit" disabled={status === 'sending'}>
+                    {status === 'sending' ? 'Sending…' : (
+                      <>
+                        Send message
+                        <Send className="h-4 w-4" />
+                      </>
+                    )}
                   </Button>
-                </form>
-              </div>
+
+                  {status === 'sent' && (
+                    <span className="text-caption text-accent">Message sent.</span>
+                  )}
+                  {status === 'error' && (
+                    <span className="text-caption text-destructive">Failed to send. Try again.</span>
+                  )}
+                </div>
+              </form>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

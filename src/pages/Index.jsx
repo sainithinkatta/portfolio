@@ -7,20 +7,12 @@ import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ScrollProgress from "@/components/animations/ScrollProgress";
-import CustomCursor from "@/components/animations/CustomCursor";
-import NoiseTexture from "@/components/animations/NoiseTexture";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Advanced Enhancements */}
-      <ScrollProgress />
-      <CustomCursor />
-      <NoiseTexture opacity={0.03} />
-
       <Header />
-      <main className="overflow-hidden">
+      <main>
         <Hero />
         <Skills />
         <Experience />
