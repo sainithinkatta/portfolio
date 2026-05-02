@@ -27,16 +27,11 @@ const Header = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/60">
       <div className="mx-auto max-w-[1200px] px-6">
-        <div className="flex items-center justify-between h-12">
-          <button
-            onClick={() => scrollToSection('home')}
-            className="text-[0.9375rem] font-medium tracking-tight text-foreground hover:text-foreground/80 transition-colors"
-          >
-            Sai Nithin
-          </button>
+        <div className="grid grid-cols-3 items-center h-12">
+          <div />
 
-          <nav className="hidden md:flex items-center gap-7">
-            {navLinks.slice(1).map((link) => (
+          <nav className="hidden md:flex items-center justify-center gap-7">
+            {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
@@ -47,7 +42,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center justify-end gap-1 col-start-3 md:col-start-3">
             <button
               onClick={toggleTheme}
               className="inline-flex items-center justify-center w-9 h-9 rounded-full text-muted-foreground hover:text-foreground hover:bg-surface transition-colors"
