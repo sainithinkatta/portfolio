@@ -52,9 +52,12 @@ const Hero = () => {
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-60 animate-ping" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
             </span>
-            Currently working as <span className="text-foreground font-medium">AI Full Stack Developer</span> at <span className="text-foreground font-medium">Centennial Technologies</span>
-            <MapPin className="h-3.5 w-3.5 mx-1 inline-block align-[-2px] text-muted-foreground" aria-hidden="true" />
-            Virginia, USA
+            Currently working as <span className="text-foreground font-medium">AI Full Stack Developer</span> at
+            <span className="inline-flex items-center">
+              <span className="text-foreground font-medium">Centennial Technologies</span>
+              <MapPin className="h-3.5 w-3.5 ml-2 mr-1 inline-block text-muted-foreground" aria-hidden="true" />
+              Virginia, USA
+            </span>
           </motion.p>
 
           <motion.div
