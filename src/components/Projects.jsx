@@ -43,27 +43,27 @@ const Projects = () => {
 
   return (
     <>
-      <section id="projects" className="py-32 lg:py-48 border-t border-border">
-        <div className="mx-auto max-w-[1200px] px-6">
+      <section id="projects" className="py-20 sm:py-28 lg:py-48 border-t border-border">
+        <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-3xl mb-20"
+            className="max-w-3xl mb-12 sm:mb-16 lg:mb-20"
           >
-            <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+            <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
               Selected Work
             </p>
             <h2 className="text-headline text-foreground text-balance">
               Projects.
             </h2>
-            <p className="mt-5 text-body text-muted-foreground max-w-2xl">
+            <p className="mt-4 sm:mt-5 text-body text-muted-foreground max-w-2xl">
               A showcase of work demonstrating expertise across the full stack.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
             {projects.map((project, index) => (
               <motion.button
                 key={index}
@@ -91,14 +91,14 @@ const Projects = () => {
                   )}
                 </div>
 
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <h3 className="text-title text-foreground">
                     {project.title}
                   </h3>
                   <p className="mt-2 text-body-sm text-muted-foreground line-clamp-2">
                     {project.description}
                   </p>
-                  <div className="mt-5 inline-flex items-center gap-1 text-[0.8125rem] font-medium text-accent">
+                  <div className="mt-4 sm:mt-5 inline-flex items-center gap-1 text-[0.8125rem] font-medium text-accent">
                     Learn more
                     <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                   </div>
@@ -107,7 +107,7 @@ const Projects = () => {
             ))}
           </div>
 
-          <div className="mt-16 flex justify-center">
+          <div className="mt-12 sm:mt-16 flex justify-center">
             <Button
               variant="outline"
               onClick={() => window.open("https://github.com/sainithinkatta", "_blank")}
@@ -126,7 +126,7 @@ const Projects = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-foreground/40 backdrop-blur-sm"
+            className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-foreground/40 backdrop-blur-sm"
             onClick={closeModal}
           >
             <motion.div
@@ -134,19 +134,19 @@ const Projects = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.97, opacity: 0 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-3xl max-h-[88vh] overflow-y-auto bg-background rounded-lg border border-border shadow-md"
+              className="relative w-full max-w-3xl max-h-[92vh] sm:max-h-[88vh] overflow-y-auto bg-background rounded-t-2xl sm:rounded-lg border border-border shadow-md"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={closeModal}
-                className="sticky top-4 float-right z-10 mr-4 mt-4 inline-flex items-center justify-center w-9 h-9 rounded-full text-muted-foreground hover:text-foreground hover:bg-surface transition-colors"
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 inline-flex items-center justify-center w-10 h-10 rounded-full bg-background/80 backdrop-blur text-muted-foreground hover:text-foreground hover:bg-surface transition-colors"
                 aria-label="Close"
               >
                 <X className="h-4 w-4" />
               </button>
 
-              <div className="p-8 sm:p-10 clear-both">
-                <div className="relative aspect-[16/9] rounded-md overflow-hidden mb-8 bg-surface-2">
+              <div className="p-5 sm:p-8 lg:p-10">
+                <div className="relative aspect-[16/9] rounded-md overflow-hidden mb-6 sm:mb-8 bg-surface-2">
                   {projectImages[selectedProject.title] && (
                     <img
                       src={projectImages[selectedProject.title]}
@@ -156,11 +156,11 @@ const Projects = () => {
                   )}
                 </div>
 
-                <h2 className="text-[2rem] sm:text-[2.5rem] font-semibold tracking-tight text-foreground leading-tight">
+                <h2 className="text-[1.5rem] sm:text-[2rem] lg:text-[2.5rem] font-semibold tracking-tight text-foreground leading-tight pr-10 sm:pr-12">
                   {selectedProject.title}
                 </h2>
 
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-5 sm:mt-6 flex flex-wrap gap-3">
                   {selectedProject.liveUrl && (
                     <Button asChild size="sm">
                       <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">
@@ -179,14 +179,14 @@ const Projects = () => {
                   )}
                 </div>
 
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div className="mt-5 sm:mt-6 flex flex-wrap gap-2">
                   {selectedProject.tags.map((tag, i) => (
                     <Badge key={i}>{tag}</Badge>
                   ))}
                 </div>
 
-                <div className="mt-10">
-                  <h3 className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+                <div className="mt-8 sm:mt-10">
+                  <h3 className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
                     Overview
                   </h3>
                   <p className="text-body text-foreground/80">
@@ -195,8 +195,8 @@ const Projects = () => {
                 </div>
 
                 {selectedProject.features?.length > 0 && (
-                  <div className="mt-10">
-                    <h3 className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+                  <div className="mt-8 sm:mt-10">
+                    <h3 className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
                       Key Features
                     </h3>
                     <ul className="space-y-3">

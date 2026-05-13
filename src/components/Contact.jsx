@@ -34,49 +34,49 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 lg:py-48 border-t border-border">
-      <div className="mx-auto max-w-[1200px] px-6">
+    <section id="contact" className="py-20 sm:py-28 lg:py-48 border-t border-border">
+      <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mb-20"
+          className="max-w-3xl mb-12 sm:mb-16 lg:mb-20"
         >
-          <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+          <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
             Contact
           </p>
           <h2 className="text-headline text-foreground text-balance">
             Let's work together.
           </h2>
-          <p className="mt-5 text-body text-muted-foreground max-w-2xl">
+          <p className="mt-4 sm:mt-5 text-body text-muted-foreground max-w-2xl">
             Have a project in mind, or want to discuss opportunities? I'd love to hear from you.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-5 gap-10 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-2 space-y-8"
+            className="lg:col-span-2 space-y-6 sm:space-y-8"
           >
             <div>
-              <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-3">
+              <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-2 sm:mb-3">
                 Email
               </p>
               <a
                 href="mailto:sainithinkatta09@gmail.com"
-                className="inline-flex items-center gap-2 text-body text-foreground hover:text-accent transition-colors"
+                className="inline-flex items-center gap-2 text-body text-foreground hover:text-accent transition-colors break-all"
               >
-                <Mail className="h-4 w-4" />
+                <Mail className="h-4 w-4 flex-shrink-0" />
                 sainithinkatta09@gmail.com
               </a>
             </div>
 
             <div>
-              <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-3">
+              <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-2 sm:mb-3">
                 Location
               </p>
               <p className="inline-flex items-center gap-2 text-body text-foreground">
@@ -93,7 +93,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-3"
           >
-            <div className="rounded-lg bg-surface p-8 sm:p-10">
+            <div className="rounded-lg bg-surface p-5 sm:p-8 lg:p-10">
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
@@ -131,8 +131,8 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="flex items-center gap-4 pt-2">
-                  <Button type="submit" disabled={status === 'sending'}>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 pt-2">
+                  <Button type="submit" disabled={status === 'sending'} className="w-full sm:w-auto">
                     {status === 'sending' ? 'Sending…' : (
                       <>
                         Send message

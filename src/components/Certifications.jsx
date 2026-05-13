@@ -5,27 +5,27 @@ import certificationsData from '@/data/certificationsData';
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="py-32 lg:py-48 border-t border-border">
-      <div className="mx-auto max-w-[1200px] px-6">
+    <section id="certifications" className="py-20 sm:py-28 lg:py-48 border-t border-border">
+      <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mb-20"
+          className="max-w-3xl mb-12 sm:mb-16 lg:mb-20"
         >
-          <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+          <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
             Achievements
           </p>
           <h2 className="text-headline text-foreground text-balance">
             Certifications.
           </h2>
-          <p className="mt-5 text-body text-muted-foreground max-w-2xl">
+          <p className="mt-4 sm:mt-5 text-body text-muted-foreground max-w-2xl">
             Professional certifications showcasing my commitment to continuous learning.
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {certificationsData.map((cert, index) => (
             <motion.a
               key={index}

@@ -23,22 +23,22 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-32 lg:py-48 border-t border-border">
-      <div className="mx-auto max-w-[1200px] px-6">
+    <section id="skills" className="py-20 sm:py-28 lg:py-48 border-t border-border">
+      <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mb-20"
+          className="max-w-3xl mb-12 sm:mb-16 lg:mb-20"
         >
-          <p className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-4">
+          <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
             Tech Stack
           </p>
           <h2 className="text-headline text-foreground text-balance">
             Tools I work with.
           </h2>
-          <p className="mt-5 text-body text-muted-foreground max-w-2xl">
+          <p className="mt-4 sm:mt-5 text-body text-muted-foreground max-w-2xl">
             Technologies and frameworks I use to bring ideas to life.
           </p>
         </motion.div>
@@ -51,10 +51,10 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.5, delay: idx * 0.04, ease: [0.16, 1, 0.3, 1] }}
-              className="grid md:grid-cols-[260px,1fr] gap-x-12 gap-y-4 py-8"
+              className="grid md:grid-cols-[260px,1fr] gap-x-12 gap-y-3 sm:gap-y-4 py-6 sm:py-8"
             >
               <h3 className="text-title text-foreground">{category}</h3>
-              <div className="flex flex-wrap gap-x-6 gap-y-2">
+              <div className="flex flex-wrap gap-x-4 sm:gap-x-6 gap-y-2">
                 {technologies.map((tech) => (
                   <span
                     key={tech}

@@ -11,15 +11,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-background pt-12"
+      className="relative min-h-screen flex items-center justify-center bg-background pt-20 pb-16 sm:pt-12 sm:pb-0"
     >
-      <div className="mx-auto max-w-[1100px] px-6 w-full">
+      <div className="mx-auto max-w-[1100px] px-5 sm:px-6 w-full">
         <div className="flex flex-col items-center text-center">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-caption uppercase tracking-[0.18em] text-muted-foreground mb-6"
+            className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-5 sm:mb-6"
           >
             AI Full Stack Engineer
           </motion.p>
@@ -37,34 +37,41 @@ const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-7 text-subtitle text-muted-foreground max-w-2xl text-balance"
+            className="mt-5 sm:mt-7 text-subtitle text-muted-foreground max-w-2xl text-balance"
           >
             I build scalable, high-performance applications with modern technologies.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 inline-flex items-center gap-2 text-body-sm text-muted-foreground"
-          >
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-60 animate-ping" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
-            </span>
-            Currently working as <span className="text-foreground font-medium">AI Full Stack Developer</span> at
-            <span className="inline-flex items-center">
-              <span className="text-foreground font-medium">Centennial Technologies</span>
-              <MapPin className="h-3.5 w-3.5 ml-2 mr-1 inline-block text-muted-foreground" aria-hidden="true" />
-              Virginia, USA
-            </span>
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-6 inline-flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-x-2 gap-y-2 text-body-sm text-muted-foreground"
+          >
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl sm:rounded-full bg-surface sm:bg-transparent sm:px-0 sm:py-0">
+              <span className="relative flex h-1.5 w-1.5 flex-shrink-0">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-60 animate-ping" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+              </span>
+              <span className="flex flex-col sm:inline text-center sm:text-left leading-snug">
+                <span>
+                  <span className="text-foreground font-medium">AI Full Stack Developer</span>
+                  <span className="text-muted-foreground"> at</span>
+                </span>
+                <span className="text-foreground font-medium sm:ml-1">Centennial Technologies</span>
+              </span>
+            </span>
+            <span className="inline-flex items-center gap-1 text-muted-foreground">
+              <MapPin className="h-3.5 w-3.5 flex-shrink-0" aria-hidden="true" />
+              Virginia, USA
+            </span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-12 flex flex-col sm:flex-row items-center gap-x-8 gap-y-4"
+            className="mt-10 sm:mt-12 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-x-8 gap-y-3 max-w-xs sm:max-w-none"
           >
             <button
               onClick={() => scrollToSection('experience')}
@@ -75,7 +82,7 @@ const Hero = () => {
 
             <button
               onClick={() => scrollToSection('contact')}
-              className="group inline-flex items-center gap-1.5 text-[0.9375rem] font-medium text-accent hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full px-2"
+              className="group inline-flex items-center justify-center gap-1.5 h-12 sm:h-auto text-[0.9375rem] font-medium text-accent hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-full px-2"
             >
               Get in touch
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -86,7 +93,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-16 flex items-center gap-2"
+            className="mt-12 sm:mt-16 flex items-center gap-2"
           >
             {[
               {
@@ -119,7 +126,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 aria-label={label}
                 style={{ color, '--hover-bg': hoverBg }}
-                className="inline-flex items-center justify-center w-10 h-10 rounded-full transition-colors hover:[background-color:var(--hover-bg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="inline-flex items-center justify-center w-11 h-11 rounded-full transition-colors hover:[background-color:var(--hover-bg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <Icon className={`h-[1.125rem] w-[1.125rem] ${darkOverride ? 'dark:text-foreground' : ''}`} />
               </a>
