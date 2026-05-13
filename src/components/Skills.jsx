@@ -1,23 +1,67 @@
 import { motion } from 'framer-motion';
 
 const skills = {
+  'GenAI': [
+    'Azure OpenAI',
+    'LLM Agents',
+    'RAG',
+    'AI Workflows',
+    'n8n'
+  ],
   Backend: [
-    'Java', 'Spring Boot', 'Spring MVC', 'Node.js', 'Python',
-    'Flask', 'Django', 'RESTful APIs', 'Microservices', 'Kafka'
+    'Java',
+    'Spring Boot',
+    'Spring MVC',
+    'Python',
+    'FastAPI',
+    'Node.js',
+    'Flask',
+    'Django',
+    'RESTful APIs',
+    'Microservices',
+    'Kafka'
   ],
   Frontend: [
-    'React', 'JavaScript', 'TypeScript', 'Vue.js', 'AngularJS',
-    'Tailwind CSS', 'Bootstrap', 'jQuery', 'Jest', 'Playwright'
+    'React',
+    'Next.js',
+    'JavaScript',
+    'TypeScript',
+    'Vue.js',
+    'AngularJS',
+    'Tailwind CSS',
+    'Bootstrap',
+    'Radix/shadcn',
+    'Jest',
+    'Playwright'
   ],
   Database: [
-    'MySQL', 'MongoDB', 'PostgreSQL', 'Redis', 'Cassandra', 'SQL'
+    'PostgreSQL',
+    'MongoDB',
+    'MySQL',
+    'Redis',
+    'Cassandra',
+    'Cosmos DB',
+    'SQL'
   ],
   'Cloud & DevOps': [
-    'AWS', 'GCP', 'Docker', 'Kubernetes', 'Git', 'JIRA',
-    'Agile/Scrum', 'CI/CD'
+    'Azure',
+    'AWS',
+    'Docker',
+    'Kubernetes',
+    'Jenkins',
+    'Git',
+    'Bitbucket',
+    'CI/CD',
+    'Postman'
   ],
   'Architecture & Security': [
-    'Spring Security', 'API Design', 'WebSockets', 'Event-Driven', 'Microservices'
+    'API Design',
+    'WebSockets',
+    'Event-Driven Architecture',
+    'JWT',
+    'RBAC',
+    'Spring Security',
+    'Microservices'
   ],
 };
 
