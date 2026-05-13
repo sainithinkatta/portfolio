@@ -1,9 +1,25 @@
 [
   {
+  "title": "AI Full Stack Engineer",
+  "company": "Centennial Technologies",
+  "location": "Virginia, USA",
+  "period": "Feb 2026 - Present",
+  "description": [
+    "Build GenAI-powered enterprise applications for finance, budgeting, compliance and document intelligence use cases.",
+    "Develop AI workflows using Azure OpenAI, LLM agents and RAG to support document analysis, financial review and business decision-making.",
+    "Create full-stack features with React, Next.js, FastAPI and PostgreSQL, connecting user-facing screens with AI and backend services.",
+    "Implement document processing solutions using OCR, Azure Document Intelligence and file parsing to extract and summarize business documents.",
+    "Develop AI chat, document assistance and in-app notification features to improve user productivity and workflow visibility.",
+    "Automate business processes with n8n by connecting enterprise data sources, AI services and downstream systems.",
+    "Build secure backend services with REST APIs, JWT, RBAC, Microsoft Entra ID SSO, Azure Blob Storage and Cosmos DB."
+  ],
+  "current": true
+},
+  {
     "title": "Software Engineer",
     "company": "Assurant",
     "location": "USA",
-    "period": "Aug 2024 - Present",
+    "period": "Aug 2024 - Jan 2026",
     "description": [
       "Collaborate with 4 cross-functional teams on a major banking initiative, mentoring 2 interns and ensuring timely feature delivery through Agile and Scrum methodologies.",
       "Build and deploy responsive web portals using Spring MVC and ReactJS, creating dynamic user interfaces that enhance customer engagement and satisfaction.",
@@ -11,8 +27,7 @@
       "Maintain 8 microservice applications using Git and Bitbucket, implementing Apache Kafka for efficient event streaming to improve system reliability and performance.",
       "Configure Tomcat servers and automate deployment processes through Jenkins CI/CD pipelines, reducing release time by 25% across 6 projects.",
       "Test and validate over 30 APIs using Postman and strengthen code quality with JUnit automated testing, improving bug detection efficiency by 95%."
-    ],
-    "current": true
+    ]
   },
   {
     "title": "Full Stack Developer",
