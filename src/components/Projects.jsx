@@ -18,7 +18,7 @@ const projectImages = {
   "Real Time Threat Intelligence": realTimeThreatAnalysis,
   "NoteMate": notesApp,
   "CommerceNest": commerceNest,
-  "FinMate": personalFinanceTracker,
+  "FinGo": personalFinanceTracker,
   "Video Object Tracking": videoObjectTracking
 };
 

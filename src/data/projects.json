@@ -1,7 +1,7 @@
 [
   {
     "title": "Video Object Tracking",
-    "description": "An end-to-end deep learning pipeline for robust multi-object tracking on the MOT16 dataset—built for self-driving cars, intelligent surveillance, and live sports analytics.",
+    "description": "An end-to-end deep learning pipeline for robust multi-object tracking on the MOT16 dataset-built for self-driving cars, intelligent surveillance, and live sports analytics.",
     "image": "https://via.placeholder.com/500",
     "tags": [
       "DeepLearning",
@@ -23,8 +23,8 @@
     ]
   },
   {
-    "title": "FinMate",
-    "description": "A responsive web application to help you track bank accounts, budgets, and expenses—built with React, TypeScript, Vite and Supabase.",
+    "title": "FinGo",
+    "description": "A personal finance app to manage bank accounts, set budgets, and track spending-with real-time dashboards and insights.",
     "image": "https://via.placeholder.com/500",
     "tags": [
       "React",
@@ -34,9 +34,9 @@
       "TailwindCSS",
       "shadcn/ui"
     ],
-    "liveUrl": "https://fin-mate-one.vercel.app/app",
+    "liveUrl": "https://fin-go-one.vercel.app/",
     "repoUrl": "https://github.com/sainithinkatta/personal-finance-tracker",
-    "detailedDescription": "FinMate is a real-time finance management app built with React, TypeScript, Vite, and Supabase. It provides an intuitive dashboard for connecting bank accounts, creating and allocating budgets, logging expenses, and visualizing spending trends—all synced live via Supabase.",
+    "detailedDescription": "FinGo is a real-time finance management app built with React, TypeScript, Vite, and Supabase. It provides an intuitive dashboard for connecting bank accounts, creating and allocating budgets, logging expenses, and visualizing spending trends-all synced live via Supabase.",
     "features": [
       "Sign up, log in, and session management via Supabase Auth",
       "Add, list, edit, and remove multiple bank accounts",

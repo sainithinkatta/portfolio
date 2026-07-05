@@ -46,23 +46,19 @@ const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 inline-flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-x-2 gap-y-2 text-body-sm text-muted-foreground"
+            className="mt-6 inline-flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-2 text-body-sm text-muted-foreground"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl sm:rounded-full bg-surface sm:bg-transparent sm:px-0 sm:py-0">
-              <span className="relative flex h-1.5 w-1.5 flex-shrink-0">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-60 animate-ping" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
-              </span>
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl sm:rounded-full border border-accent/20 bg-accent/[0.06]">
               <span className="flex flex-col sm:inline text-center sm:text-left leading-snug">
                 <span>
-                  <span className="text-foreground font-medium">AI Full Stack Developer</span>
+                  <span className="text-accent font-medium">AI Full Stack Developer</span>
                   <span className="text-muted-foreground"> at</span>
                 </span>
                 <span className="text-foreground font-medium sm:ml-1">Centennial Technologies</span>
               </span>
             </span>
-            <span className="inline-flex items-center gap-1 text-muted-foreground">
-              <MapPin className="h-3.5 w-3.5 flex-shrink-0" aria-hidden="true" />
+            <span className="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-surface text-muted-foreground">
+              <MapPin className="h-3.5 w-3.5 flex-shrink-0 text-accent/70" aria-hidden="true" />
               Virginia, USA
             </span>
           </motion.div>

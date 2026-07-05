@@ -43,7 +43,7 @@ const Education = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-5 sm:gap-8 max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-5 sm:gap-8 max-w-5xl mx-auto">
           {educationData.map((edu, index) => (
             <motion.article
               key={index}
@@ -74,7 +74,7 @@ const Education = () => {
           ))}
         </div>
 
-        <div className="mt-16 sm:mt-20 lg:mt-24 max-w-5xl">
+        <div className="mt-16 sm:mt-20 lg:mt-24 max-w-5xl mx-auto">
           <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
             Beyond Academics
           </p>
