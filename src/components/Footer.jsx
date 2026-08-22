@@ -1,32 +1,45 @@
-import { ArrowUp } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowUp, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
+const socialLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/sainithinreddy/', icon: FaLinkedin, iconClassName: 'text-[#0A66C2]' },
+  { label: 'GitHub', href: 'https://github.com/sainithinkatta', icon: FaGithub, iconClassName: 'text-[#24292F] dark:text-white' },
+  { label: 'Email', href: 'mailto:sainithinkatta09@gmail.com', icon: Mail, iconClassName: 'text-[#EA4335]' },
+];
 
 const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
+  const [showTop, setShowTop] = useState(false);
   useEffect(() => {
-    const onScroll = () => setIsVisible(window.pageYOffset > 400);
-    window.addEventListener('scroll', onScroll);
+    const onScroll = () => setShowTop(window.scrollY > 500);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
     <>
-      {isVisible && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 inline-flex items-center justify-center w-12 h-12 sm:w-11 sm:h-11 rounded-full bg-foreground text-background shadow-md hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          aria-label="Scroll to top"
-        >
-          <ArrowUp className="h-4 w-4" />
-        </button>
-      )}
-
-      <footer className="border-t border-border">
-        <div className="mx-auto max-w-[1200px] px-5 sm:px-6 py-8 sm:py-10 flex items-center justify-center">
-          <p className="text-caption text-muted-foreground">
-            &copy; {new Date().getFullYear()} Sai Nithin.
-          </p>
+      <AnimatePresence>{showTop && <motion.button initial={{ opacity: 0, scale: .7 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: .7 }} whileHover={{ y: -4 }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-foreground text-background shadow-md" aria-label="Back to top"><ArrowUp className="h-4 w-4" /></motion.button>}</AnimatePresence>
+      <footer className="site-container py-12 sm:py-16">
+        <div className="px-2 sm:px-4">
+          <div className="flex items-center justify-center gap-3">
+            {socialLinks.map(({ label, href, icon: Icon, iconClassName }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                title={label}
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <Icon className={`h-5 w-5 ${iconClassName}`} />
+              </a>
+            ))}
+          </div>
+          <div className="mt-3 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+            <p>© {new Date().getFullYear()} Sai Nithin <span className="mx-2" aria-hidden="true"></span></p>
+          </div>
         </div>
       </footer>
     </>

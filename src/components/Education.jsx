@@ -1,115 +1,39 @@
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
-import educationData from '../data/educationData';
+import SectionHeading from '@/components/motion/SectionHeading';
+import SectionFrame from '@/components/ui/section-frame';
+import { EASE } from '@/lib/motion';
+import educationData from '@/data/educationData';
 
-const extracurricularActivities = [
-  {
-    title: "Tech Club Member",
-    activities: [
-      "Built projects and prototypes in hackathons, coding competitions, and hands-on workshops",
-      "Co-organized meetups and study circles; shared tips, repos, and live demos",
-      "Collaborated in small squads with scoped features, split tasks, shipped on time"
-    ]
-  },
-  {
-    title: "Tech News Contributor",
-    activities: [
-      "Wrote and edited pieces on trends, tools, and campus tech events for Tech News",
-      "Researched sources and interviewed organizers to publish clear, accurate articles",
-      "Boosted readership with timely coverage and crisp summaries"
-    ]
-  }
-];
+const Education = () => (
+  <SectionFrame id="education" tone="plain">
+    <SectionHeading
+      eyebrow="Academic Background"
+      title="Education."
+      description="The academic journey that built the foundation for my technical expertise."
+    />
 
-const Education = () => {
-  return (
-    <section id="education" className="py-20 sm:py-28 lg:py-48 border-t border-border">
-      <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
+    <div className="grid gap-5 lg:grid-cols-2">
+      {educationData.map((education, index) => (
+        <motion.article
+          key={education.degree}
+          initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mb-12 sm:mb-16 lg:mb-20"
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: .7, delay: index * .08, ease: EASE }}
+          className="relative overflow-hidden rounded-[32px] bg-[linear-gradient(145deg,#eef0ff,#dbe9ff)] p-7 text-[#15151b] dark:bg-[linear-gradient(145deg,#26233a,#181b2d)] dark:text-white sm:p-10"
         >
-          <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
-            Academic Background
-          </p>
-          <h2 className="text-headline text-foreground text-balance">
-            Education.
-          </h2>
-          <p className="mt-4 sm:mt-5 text-body text-muted-foreground max-w-2xl">
-            The academic journey that built the foundation for my technical expertise.
-          </p>
-        </motion.div>
+          <h3 className="max-w-xl font-display text-3xl font-semibold leading-tight sm:text-4xl">{education.degree}</h3>
+          <p className="mt-5 text-lg text-black/65 dark:text-white/65">{education.university}</p>
+          <p className="mt-2 flex items-center gap-2 text-sm text-black/45 dark:text-white/45"><MapPin className="h-4 w-4" />{education.location}</p>
+          <ul className="mt-8 space-y-3 border-t border-black/10 pt-7 dark:border-white/10">
+            {education.description.map((item) => <li key={item} className="flex gap-3 text-sm leading-relaxed text-black/58 dark:text-white/58"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7864ff]" />{item}</li>)}
+          </ul>
+        </motion.article>
+      ))}
+    </div>
 
-        <div className="grid md:grid-cols-2 gap-5 sm:gap-8 max-w-5xl mx-auto">
-          {educationData.map((edu, index) => (
-            <motion.article
-              key={index}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.6, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
-              className="rounded-lg bg-surface p-6 sm:p-8"
-            >
-              <h3 className="text-title text-foreground leading-tight">
-                {edu.degree}
-              </h3>
-              <p className="mt-3 text-body text-foreground/80">{edu.university}</p>
-              <div className="mt-1 inline-flex items-center text-body-sm text-muted-foreground">
-                <MapPin className="h-3.5 w-3.5 mr-1.5 flex-shrink-0" />
-                {edu.location}
-              </div>
-
-              <ul className="mt-5 sm:mt-6 space-y-3">
-                {edu.description.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-body-sm text-muted-foreground leading-relaxed">
-                    <span className="mt-2 w-1 h-1 rounded-full bg-muted-foreground/60 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.article>
-          ))}
-        </div>
-
-        <div className="mt-16 sm:mt-20 lg:mt-24 max-w-5xl mx-auto">
-          <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
-            Beyond Academics
-          </p>
-          <h3 className="text-[1.625rem] sm:text-[2rem] font-semibold tracking-tight text-foreground mb-8 sm:mb-12">
-            Activities.
-          </h3>
-
-          <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
-            {extracurricularActivities.map((activity, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="rounded-lg bg-surface p-6"
-              >
-                <h4 className="text-body font-semibold text-foreground">
-                  {activity.title}
-                </h4>
-                <ul className="mt-4 space-y-2.5">
-                  {activity.activities.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-body-sm text-muted-foreground leading-relaxed">
-                      <span className="mt-2 w-1 h-1 rounded-full bg-muted-foreground/60 flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+  </SectionFrame>
+);
 
 export default Education;

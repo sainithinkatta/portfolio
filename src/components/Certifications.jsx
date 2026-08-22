@@ -1,69 +1,43 @@
-import { ArrowRight, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { ArrowUpRight, Award, Calendar } from 'lucide-react';
+import SectionHeading from '@/components/motion/SectionHeading';
+import SectionFrame from '@/components/ui/section-frame';
 import { Badge } from '@/components/ui/badge';
-import certificationsData from '@/data/certificationsData';
+import { EASE } from '@/lib/motion';
+import certifications from '@/data/certificationsData';
 
-const Certifications = () => {
-  return (
-    <section id="certifications" className="py-20 sm:py-28 lg:py-48 border-t border-border">
-      <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
-        <motion.div
+const gradients = ['from-violet-500 to-indigo-500', 'from-sky-500 to-cyan-400', 'from-fuchsia-500 to-rose-400'];
+
+const Certifications = () => (
+  <SectionFrame id="certifications" tone="soft">
+    <SectionHeading
+      title="Certifications."
+      description="Professional certifications showcasing continuous learning."
+    />
+    <div className="grid gap-5 lg:grid-cols-3">
+      {certifications.map((cert, index) => (
+        <motion.a
+          key={cert.title}
+          href={cert.url}
+          target="_blank"
+          rel="noreferrer"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mb-12 sm:mb-16 lg:mb-20"
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: .65, delay: index * .08, ease: EASE }}
+          whileHover={{ y: -7 }}
+          className="group relative flex min-h-[390px] flex-col overflow-hidden rounded-[28px] border border-border/70 bg-surface-2 p-7 shadow-sm sm:p-8"
         >
-          <p className="text-caption uppercase tracking-[0.14em] sm:tracking-[0.18em] text-muted-foreground mb-3 sm:mb-4">
-            Achievements
-          </p>
-          <h2 className="text-headline text-foreground text-balance">
-            Certifications.
-          </h2>
-          <p className="mt-4 sm:mt-5 text-body text-muted-foreground max-w-2xl">
-            Professional certifications showcasing my commitment to continuous learning.
-          </p>
-        </motion.div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
-          {certificationsData.map((cert, index) => (
-            <motion.a
-              key={index}
-              href={cert.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.6, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
-              className="group block rounded-lg bg-surface p-6 transition-shadow duration-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              <h3 className="text-title text-foreground leading-snug">
-                {cert.title}
-              </h3>
-              <p className="mt-2 text-body-sm text-muted-foreground">{cert.issuer}</p>
-
-              <div className="mt-4 inline-flex items-center text-caption text-muted-foreground">
-                <Calendar className="h-3.5 w-3.5 mr-1.5" />
-                {cert.date}
-              </div>
-
-              <div className="mt-5 flex flex-wrap gap-1.5">
-                {cert.skills.slice(0, 4).map((skill, i) => (
-                  <Badge key={i}>{skill}</Badge>
-                ))}
-              </div>
-
-              <div className="mt-6 inline-flex items-center gap-1 text-[0.8125rem] font-medium text-accent">
-                View certificate
-                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-              </div>
-            </motion.a>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+          <div className={`grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br ${gradients[index % gradients.length]} text-white`}><Award className="h-5 w-5" /></div>
+          <p className="mt-10 text-xs font-semibold uppercase tracking-[.14em] text-muted-foreground">{cert.issuer}</p>
+          <h3 className="mt-3 font-display text-2xl font-semibold leading-tight">{cert.title}</h3>
+          <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground"><Calendar className="h-4 w-4" />{cert.date}</div>
+          <div className="mt-6 flex flex-wrap gap-2">{cert.skills.map((skill) => <Badge key={skill} variant="outline">{skill}</Badge>)}</div>
+          <div className="mt-auto flex items-center justify-between pt-8 text-sm font-semibold"><span>View credential</span><span className="grid h-10 w-10 place-items-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:rotate-45"><ArrowUpRight className="h-4 w-4" /></span></div>
+        </motion.a>
+      ))}
+    </div>
+  </SectionFrame>
+);
 
 export default Certifications;
