@@ -6,9 +6,10 @@ import {
   useMotionTemplate,
   useReducedMotion,
 } from 'framer-motion';
-import { ArrowDown, ArrowUpRight, Mail, MapPin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Magnetic from '@/components/motion/Magnetic';
+// import GitHubContributions from '@/components/GitHubContributions';
 import { EASE } from '@/lib/motion';
 
 const container = {
@@ -86,7 +87,7 @@ const Hero = ({ start = true }) => {
       id="home"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="legacy-hero relative min-h-screen flex items-center justify-center bg-background pt-20 pb-16 sm:pt-12 sm:pb-0 overflow-hidden"
+      className="legacy-hero relative min-h-screen flex items-center justify-center bg-background pt-16 pb-20 sm:pt-8 sm:pb-4 overflow-hidden"
     >
       {/* Ambient glow + dot grid, with a cursor-following spotlight layer */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -120,28 +121,31 @@ const Hero = ({ start = true }) => {
             </span>
           </h1>
 
-          <motion.div
-            variants={item}
-            className="mt-6 sm:mt-7 inline-flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-2 text-body-sm text-muted-foreground"
-          >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl sm:rounded-full border border-accent/20 bg-accent/[0.06]">
-              <span className="relative flex h-2 w-2 flex-shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-              </span>
-              <span className="flex flex-col sm:inline text-center sm:text-left leading-snug">
-                <span>
-                  <span className="text-accent font-medium">AI Full Stack Developer</span>
-                  <span className="text-muted-foreground"> at</span>
+          {/*
+            Temporarily hidden hero details:
+            <motion.div
+              variants={item}
+              className="mt-6 sm:mt-7 inline-flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-2 text-body-sm text-muted-foreground"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl sm:rounded-full border border-accent/20 bg-accent/[0.06]">
+                <span className="relative flex h-2 w-2 flex-shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
                 </span>
-                <span className="text-foreground font-medium sm:ml-1">Centennial Technologies</span>
+                <span className="flex flex-col sm:inline text-center sm:text-left leading-snug">
+                  <span>
+                    <span className="text-accent font-medium">AI Full Stack Developer</span>
+                    <span className="text-muted-foreground"> at</span>
+                  </span>
+                  <span className="text-foreground font-medium sm:ml-1">Centennial Technologies</span>
+                </span>
               </span>
-            </span>
-            <span className="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-surface text-muted-foreground">
-              <MapPin className="h-3.5 w-3.5 flex-shrink-0 text-accent/70" aria-hidden="true" />
-              USA
-            </span>
-          </motion.div>
+              <span className="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-surface text-muted-foreground">
+                <MapPin className="h-3.5 w-3.5 flex-shrink-0 text-accent/70" aria-hidden="true" />
+                USA
+              </span>
+            </motion.div>
+          */}
 
           <motion.div
             variants={item}
@@ -168,7 +172,7 @@ const Hero = ({ start = true }) => {
             </button>
           </motion.div>
 
-          <motion.div variants={item} className="mt-12 sm:mt-16 flex items-center gap-2">
+          <motion.div variants={item} className="mt-6 sm:mt-8 flex items-center gap-2">
             {socials.map(({ icon: Icon, url, label, color, hoverBg, darkOverride }) => (
               <Magnetic key={label} strength={0.35}>
                 <a
@@ -184,6 +188,12 @@ const Hero = ({ start = true }) => {
               </Magnetic>
             ))}
           </motion.div>
+
+          {/* Temporarily hidden GitHub contributions section.
+          <motion.div variants={item} className="mt-5 w-full sm:mt-6">
+            <GitHubContributions />
+          </motion.div>
+          */}
         </motion.div>
       </div>
 

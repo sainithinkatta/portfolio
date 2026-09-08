@@ -7,18 +7,12 @@ import SectionFrame from '@/components/ui/section-frame';
 import SectionHeading from '@/components/motion/SectionHeading';
 import { EASE, MORPH } from '@/lib/motion';
 import projects from '@/data/projects.json';
-import realTimeThreatAnalysis from '@/assets/projects/real_time_threat_ananalysis.png';
-import notesApp from '@/assets/projects/notes_app.png';
-import commerceNest from '@/assets/projects/commerce-nest.png';
 import personalFinanceTracker from '@/assets/projects/personal-finance-tracker.png';
-import videoObjectTracking from '@/assets/projects/video_tracking.png';
+import objectVideoTracking from '@/assets/projects/video_tracking.png';
 
 const images = {
-  'Real Time Threat Intelligence': realTimeThreatAnalysis,
-  NoteMate: notesApp,
-  CommerceNest: commerceNest,
   FinGo: personalFinanceTracker,
-  'Video Object Tracking': videoObjectTracking,
+  'Object Video Tracking': objectVideoTracking,
 };
 
 const ProjectCard = ({ project, index, onOpen }) => {

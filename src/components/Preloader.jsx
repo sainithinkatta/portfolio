@@ -6,7 +6,6 @@ const Preloader = () => (
     <div className="text-center">
       <div className="overflow-hidden"><motion.p initial={{ y: '110%' }} animate={{ y: 0 }} transition={{ duration: .7, ease: EASE, delay: .1 }} className="font-display text-4xl font-semibold tracking-[-.06em] sm:text-6xl">Sai Nithin<span className="text-[#8068ff]">.</span></motion.p></div>
       <div className="mx-auto mt-5 h-[2px] w-36 overflow-hidden bg-white/12"><motion.div initial={{ x: '-100%' }} animate={{ x: '0%' }} transition={{ duration: 1.05, ease: EASE, delay: .25 }} className="h-full w-full bg-gradient-to-r from-[#7758ff] to-[#29d5eb]" /></div>
-      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .55 }} className="mt-4 text-[10px] font-semibold uppercase tracking-[.24em] text-white/38">Designing intelligent experiences</motion.p>
     </div>
   </motion.div>
 );
