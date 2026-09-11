@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import SectionFrame from '@/components/ui/section-frame';
 import SectionHeading from '@/components/motion/SectionHeading';
+import ProjectVideo from '@/components/ProjectVideo';
 import { EASE, MORPH } from '@/lib/motion';
 import projects from '@/data/projects.json';
 import personalFinanceTracker from '@/assets/projects/personal-finance-tracker.png';
@@ -15,7 +16,15 @@ const images = {
   'Object Video Tracking': objectVideoTracking,
 };
 
-const ProjectCard = ({ project, index, onOpen }) => {
+const trackingVideo = `${import.meta.env.BASE_URL}tracking_output.mp4`;
+
+const ProjectMedia = ({ project, className, active = true }) => (
+  project.title === 'Object Video Tracking'
+    ? <ProjectVideo src={trackingVideo} poster={images[project.title]} label="Object tracking demonstration with tracked pedestrians" className={className} active={active} />
+    : <img src={images[project.title]} alt={`${project.title} interface`} className={className} />
+);
+
+const ProjectCard = ({ project, index, onOpen, active }) => {
   return (
     <motion.article
       initial={{ opacity: 0, y: 28 }}
@@ -36,7 +45,7 @@ const ProjectCard = ({ project, index, onOpen }) => {
           className="h-full overflow-hidden rounded-[30px] border border-border/70 bg-surface-2 shadow-sm lg:grid lg:grid-cols-[1.35fr_.65fr]"
         >
           <motion.div layoutId={`project-image-${project.title}`} transition={MORPH} className="relative aspect-[16/10] overflow-hidden bg-surface lg:aspect-auto lg:min-h-[520px]">
-            <img src={images[project.title]} alt={`${project.title} interface`} className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.035]" />
+            <ProjectMedia project={project} active={active} className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.035]" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-40" />
           </motion.div>
           <div className="flex flex-col p-6 sm:p-8 lg:p-10">
@@ -73,7 +82,7 @@ const Projects = () => {
       <SectionFrame id="projects" tone="plain" className="!rounded-none !border-0 !bg-transparent">
         <SectionHeading title="Projects." description="A showcase of my personal work." />
         <div className="grid gap-14 lg:gap-20">
-          {projects.map((project, index) => <ProjectCard key={project.title} project={project} index={index} onOpen={setSelectedProject} />)}
+          {projects.map((project, index) => <ProjectCard key={project.title} project={project} index={index} onOpen={setSelectedProject} active={!selectedProject} />)}
         </div>
       </SectionFrame>
 
@@ -96,7 +105,7 @@ const Projects = () => {
             >
               <button onClick={() => setSelectedProject(null)} className="absolute right-4 top-4 z-20 grid h-11 w-11 place-items-center rounded-full bg-black/65 text-white backdrop-blur-lg transition-transform hover:rotate-90" aria-label="Close project details"><X className="h-4 w-4" /></button>
               <div className="overflow-y-auto">
-                <motion.div layoutId={`project-image-${selectedProject.title}`} transition={MORPH} className="aspect-[16/8] overflow-hidden bg-surface"><img src={images[selectedProject.title]} alt={`${selectedProject.title} interface`} className="h-full w-full object-cover object-top" /></motion.div>
+                <motion.div layoutId={`project-image-${selectedProject.title}`} transition={MORPH} className="aspect-[16/8] overflow-hidden bg-surface"><ProjectMedia project={selectedProject} className="h-full w-full object-cover object-top" /></motion.div>
                 <div className="grid gap-10 p-6 sm:p-10 lg:grid-cols-[1.15fr_.85fr] lg:p-12">
                   <div>
                     <p className="text-caption font-semibold uppercase tracking-[.16em] text-accent">Project overview</p>
