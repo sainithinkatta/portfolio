@@ -15,5 +15,6 @@ export default defineConfig(() => ({
       "@": path.resolve(new URL(".", import.meta.url).pathname, "./src"),
     },
   },
-  base: '/portfolio/'
+  // The custom domain serves the site from its root.
+  base: '/'
 }));
