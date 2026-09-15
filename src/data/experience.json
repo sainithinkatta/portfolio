@@ -1,32 +1,32 @@
 [
   {
-  "title": "AI Full Stack Engineer",
-  "company": "Centennial Technologies",
-  "location": "Virginia, USA",
-  "period": "",
-  "description": [
-    "Build GenAI-powered enterprise applications for finance, budgeting, compliance and document intelligence use cases.",
-    "Develop AI workflows using Azure OpenAI, LLM agents and RAG to support document analysis, financial review and business decision-making.",
-    "Create full-stack features with React, Next.js, FastAPI and PostgreSQL, connecting user-facing screens with AI and backend services.",
-    "Implement document processing solutions using OCR, Azure Document Intelligence and file parsing to extract and summarize business documents.",
-    "Develop AI chat, document assistance and in-app notification features to improve user productivity and workflow visibility.",
-    "Automate business processes with n8n by connecting enterprise data sources, AI services and downstream systems.",
-    "Build secure backend services with REST APIs, JWT, RBAC, Microsoft Entra ID SSO, Azure Blob Storage and Cosmos DB."
-  ],
-  "current": true
-},
+    "title": "AI Full Stack Engineer",
+    "company": "Centennial Technologies",
+    "location": "Virginia, USA",
+    "period": "",
+    "description": [
+      "Build enterprise AI applications that support finance, budgeting, compliance, and business document analysis.",
+      "Develop document analysis and financial review workflows with Azure OpenAI, AI agents, and RAG to support business decisions.",
+      "Connect enterprise application workflows to AI and backend services through FastAPI and PostgreSQL.",
+      "Extract and summarize business documents using OCR, Azure Document Intelligence, and file parsing.",
+      "Build AI chat, document assistance, and in-app notifications to help users work with documents and stay informed about workflow activity.",
+      "Automate business processes with n8n, connecting enterprise data sources, AI services, and downstream systems.",
+      "Secure access to backend services with JWT, role-based permissions, and Microsoft Entra ID SSO, with Azure Blob Storage and Cosmos DB for storage."
+    ],
+    "current": true
+  },
   {
     "title": "Software Engineer",
     "company": "Assurant",
     "location": "USA",
     "period": "Aug 2024 - Jan 2026",
     "description": [
-      "Collaborate with 4 cross-functional teams on a major banking initiative, mentoring 2 interns and ensuring timely feature delivery through Agile and Scrum methodologies.",
-      "Build and deploy responsive web portals using Spring MVC and ReactJS, creating dynamic user interfaces that enhance customer engagement and satisfaction.",
-      "Develop RESTful APIs with Java 21 and Spring Boot, connecting Hibernate with SQL and MongoDB databases to enable fast, real-time data processing.",
-      "Maintain 8 microservice applications using Git and Bitbucket, implementing Apache Kafka for efficient event streaming to improve system reliability and performance.",
-      "Configure Tomcat servers and automate deployment processes through Jenkins CI/CD pipelines, reducing release time by 25% across 6 projects.",
-      "Test and validate over 30 APIs using Postman and strengthen code quality with JUnit automated testing, improving bug detection efficiency by 95%."
+      "Coordinated feature delivery for a banking initiative across 4 teams and mentored 2 interns.",
+      "Built and deployed responsive B2B portals supporting business workflows for a banking initiative.",
+      "Developed backend APIs that connected SQL and MongoDB data to application workflows, enabling real-time processing.",
+      "Maintained 8 microservice applications and implemented Apache Kafka event streaming to improve reliability and performance.",
+      "Automated deployments across 6 projects with Jenkins CI/CD and configured application servers, reducing release time by 25%.",
+      "Validated over 30 APIs and automated tests with JUnit, improving bug detection efficiency by 95%."
     ]
   },
   {
@@ -35,10 +35,10 @@
     "location": "MO, USA",
     "period": "Jan 2024 - Jul 2024",
     "description": [
-      "Developed full-stack web applications that automated student request workflows for UMKC departments, reducing manual processing time by 30%.",
-      "Built reusable React and Node.js components with SQL database integration, improving data accuracy by 25% and enhancing system reliability.",
-      "Implemented CI/CD automation and Docker containerization, reducing deployment time from hours to minutes and streamlining the release process.",
-      "Collaborated with cross-functional teams to design analytics dashboards that provided real-time performance insights, increasing data-driven decision-making by 40%."
+      "Automated student request workflows for university departments, reducing manual processing time by 30%.",
+      "Built reusable application features backed by SQL data, improving data accuracy by 25% and strengthening system reliability.",
+      "Automated application releases with CI/CD and Docker, reducing deployment time from hours to minutes.",
+      "Collaborated with cross-functional teams on analytics dashboards that provided real-time performance insights, increasing data-driven decision-making by 40%."
     ]
   },
   {
@@ -47,11 +47,11 @@
     "location": "Bangalore, India",
     "period": "Jan 2022 - Aug 2023",
     "description": [
-      "Delivered 15+ scalable warehouse management web pages using ReactJS and Spring Boot, accelerating development cycles by 30% through Agile practices and Jenkins automation.",
-      "Migrated 35+ legacy AngularJS components to Vue.js, improving page load times by 40% and reducing maintenance costs by 25% for a smoother user experience.",
-      "Developed reusable UI components with Tailwind CSS and Bootstrap to maintain design consistency and reduce feature delivery timelines by 2 weeks on average.",
-      "Created RESTful APIs for inventory and stock management systems, improving response times by 35% and ensuring accurate real-time data for warehouse operations.",
-      "Enhanced CI/CD pipelines by integrating automated testing and code analysis tools, increasing deployment reliability and reducing production rollback incidents."
+      "Delivered 15+ pages for warehouse management workflows, accelerating development cycles by 30% through Agile delivery and Jenkins automation.",
+      "Modernized 35+ legacy interface components, improving page load times by 40% and reducing maintenance costs by 25%.",
+      "Created reusable interface components that kept application screens consistent and shortened feature delivery by 2 weeks on average.",
+      "Built inventory and stock management APIs that provided accurate, real-time data for warehouse operations and improved response times by 35%.",
+      "Integrated automated testing and code analysis into release pipelines, improving deployment reliability and reducing production rollbacks."
     ]
   }
 ]
